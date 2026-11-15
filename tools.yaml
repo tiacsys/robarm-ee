@@ -1,0 +1,12 @@
+# Tools that robarm-ee needs on top of xdmod/tools.yaml (D19).
+# Format: xdmod/curatrix/README.md ("tools.yaml").
+tools: []
+system:
+  # The KiCad suite (GUI and kicad-cli) is used from the machine. The project files are written
+  # by KiCad 10.0, so any 10.0 release may open them. xdmod pins the exact kicad-cli version
+  # used for checks and exports.
+  - name: kicad
+    version: "10.0.*"
+    cmd: [kicad-cli, --version]
+    optional: true
+    roles: [ee, ee3d, integration, full]
