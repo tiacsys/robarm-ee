@@ -4,7 +4,7 @@ Electrical engineering of the robot arm example of [XDMOD](https://github.com/ti
 KiCad projects of the PCBAs, the wiring of the prototype setups, and the EE design document.
 
 Status: **skeleton** (Phase 4). The structure, the checks and an empty document are in place; the
-content comes in Phase 5.
+content comes in Phase 6.
 
 ## Layout
 
