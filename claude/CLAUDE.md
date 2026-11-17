@@ -17,8 +17,14 @@ parts (`lib/`), scripted EE checks (`tests/`), and one document, `docs/ee-design
   See `pcba/README.md`.
 - **Start KiCad only through `curatrix launch kicad`**, which sets those variables and a
   workspace-local KiCad config.
+- **The EE model** (`model/*.sysml`) owns the boards (`EE-PCBA`), connector ports with their pin
+  maps (`EE-PORT`) and cables (`EE-HAR`) (XD-ADR-0128, XD-ADR-0130). A board def specializes its
+  `SYS-EL` def from robarm-syseng and `XdDomain::Pcba`, and redefines every inherited port. After a
+  model change: `curatrix gen model robarm-ee`, `curatrix views build robarm-ee`, commit
+  `generated/` and `views/`.
 - **Trace fields** are hidden symbol or sheet fields: `TraceID`, `Realizes`, `Satisfies`,
-  `Conforms`, `Status`, `Configs`. The PCBA ID is a project text variable. EE and SW never link
+  `Conforms`, `Status`, `Configs`. The project text variable `TraceID` names the board def's
+  `EE-PCBA` ID: a reference only, the need comes from the model. EE and SW never link
   to each other: both link to the interfaces (`SYS-IF`) in robarm-syseng (D36).
 - After a KiCad change: `curatrix gen cad-needs robarm-ee`, commit `generated/cad-needs.json`.
 - Tests that verify system requirements or interfaces belong to robarm-integration (D115).

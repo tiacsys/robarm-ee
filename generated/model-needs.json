@@ -1,0 +1,40 @@
+{
+  "created": "",
+  "current_version": "",
+  "project": "robarm-ee-model",
+  "versions": {
+    "": {
+      "needs": {
+        "EE-PCBA-0001": {
+          "content": "SysML ``PartDefinition`` ``RobArmEe::Canary::CanaryBoard``.",
+          "id": "EE-PCBA-0001",
+          "qualified_name": "RobArmEe::Canary::CanaryBoard",
+          "realizes": [
+            "SYS-EL-0001"
+          ],
+          "source_file": "model/canary.sysml",
+          "status": "valid",
+          "sysml_kind": "PartDefinition",
+          "title": "CanaryBoard",
+          "type": "ee-pcba"
+        },
+        "EE-PORT-0001": {
+          "content": "SysML ``PortDefinition`` ``RobArmEe::Canary::CanaryHeader``.",
+          "id": "EE-PORT-0001",
+          "instances": [
+            "RobArmEe::Canary::CanaryBoard::j1"
+          ],
+          "part_of": [
+            "EE-PCBA-0001"
+          ],
+          "qualified_name": "RobArmEe::Canary::CanaryHeader",
+          "source_file": "model/canary.sysml",
+          "status": "valid",
+          "sysml_kind": "PortDefinition",
+          "title": "CanaryHeader",
+          "type": "ee-port"
+        }
+      }
+    }
+  }
+}

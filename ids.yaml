@@ -5,5 +5,7 @@ EE-CMP:
   - 1
 EE-PCBA:
   - 1
+EE-PORT:
+  - 1
 EE-REQ: []
 EE-TC: []
