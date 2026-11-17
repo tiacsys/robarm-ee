@@ -21,20 +21,6 @@
           "status": "valid",
           "title": "10k",
           "type": "ee-cmp"
-        },
-        "EE-PCBA-0001": {
-          "configs": [
-            "SYS-CFG-0001"
-          ],
-          "content": "KiCad project ``pcba/canary-board/canary-board.kicad_pro``.",
-          "id": "EE-PCBA-0001",
-          "realizes": [
-            "SYS-EL-0001"
-          ],
-          "source_file": "pcba/canary-board/canary-board.kicad_pro",
-          "status": "valid",
-          "title": "canary-board",
-          "type": "ee-pcba"
         }
       }
     }
