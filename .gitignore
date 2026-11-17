@@ -4,3 +4,5 @@
 fp-info-cache
 _autosave-*
 ~*
+# KiCad per-user project state (open files, layer visibility); not part of the design
+*.kicad_prl

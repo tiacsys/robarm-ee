@@ -21,7 +21,7 @@ Example `sym-lib-table` of `pcba/<name>/`:
 ```
 (sym_lib_table
   (version 7)
-  (lib (name "Device")(type "KiCad")(uri "${XD_KICAD_SYMBOLS}/Device.kicad_sym")(options "")(descr ""))
+  (lib (name "Device")(type "KiCad")(uri "${XD_KICAD_SYMBOLS}/Device.kicad_symdir")(options "")(descr ""))
   (lib (name "robarm")(type "KiCad")(uri "${KIPRJMOD}/../../lib/robarm.kicad_sym")(options "")(descr "robarm-ee local symbols"))
 )
 ```
@@ -36,7 +36,8 @@ Example `fp-lib-table`:
 )
 ```
 
-List only the libraries the project uses.
+List only the libraries the project uses. The KiCad 10 symbol libraries are folders
+(`*.kicad_symdir`, one file per symbol), not single `.kicad_sym` files.
 
 ## Trace fields
 
