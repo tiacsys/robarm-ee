@@ -4,6 +4,12 @@ One folder per PCBA, `pcba/<name>/`, with one KiCad project: `<name>.kicad_pro`,
 `<name>.kicad_sch`, `<name>.kicad_pcb`, plus the project's own `sym-lib-table` and
 `fp-lib-table`. The number of PCBAs is decided in the system design (D28).
 
+A new board starts as a board def in the EE model (`part def <'EE-PCBA-NEW-x'> MyBoard :>
+<system block>, XdDomain::Pcba`); `curatrix new pcba MyBoard --repo robarm-ee` then makes the
+folder `pcba/my-board/` with the project, library tables, jobset and severities from the xdmod
+template, and the document `pcba-my-board`. CK-F6 checks the folders (one `.kicad_pro` per folder,
+named like it, no KiCad project files elsewhere), CK-F7 the 1:1 below.
+
 Each project is 1:1 with a board def in the EE model (`model/`, XD-ADR-0128). The project's text
 variable `TraceID` names the board def's `EE-PCBA` ID; it is a reference only. Links (`realizes`)
 and `configs` come from the model, so no other trace variable goes into the `.kicad_pro`
