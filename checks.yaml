@@ -28,9 +28,10 @@ views:                                  # CK-D3: views/<view>.drawio.svg match t
   dir: views
 
 cad:                                    # CK-D4 (plain Python, also without KiCad), CK-H1
-  # Root schematics only; hierarchical sheets are followed. One KiCad project per PCBA and per
-  # prototype configuration (repo-layouts.md §2).
-  kicad: ["pcba/*/*.kicad_sch", "proto/*/*.kicad_sch"]
+  # KiCad projects by their .kicad_pro, one per folder pcba/<name>/ or proto/<name>/; the root
+  # sheet is <name>.kicad_sch (hierarchical sheets are followed). CK-F6 checks the folders,
+  # CK-F7 the 1:1 between board defs of the EE model and pcba/ projects (XD-ADR-0128).
+  projects: ["pcba/*/*.kicad_pro", "proto/*/*.kicad_pro"]
   needs: generated/cad-needs.json
 
 requirements: true                      # CK-E2, CK-E3 on the EE requirements
@@ -46,6 +47,6 @@ variants: true                          # CK-B8: board variants across levels (X
 # missing turns an expected check off, and CK-H6 fails.
 expect: [
   CK-A1, CK-A3, CK-A6, CK-B1, CK-B2, CK-B3, CK-B5, CK-B8, CK-B6, CK-B7, CK-C1, CK-C2,
-  CK-D2, CK-D3, CK-D4, CK-D5, CK-E1, CK-E2, CK-E3, CK-E4, CK-G1, CK-G2, CK-H1, CK-H2, CK-H3,
+  CK-D2, CK-D3, CK-D4, CK-D5, CK-E1, CK-E2, CK-E3, CK-E4, CK-F6, CK-F7, CK-G1, CK-G2, CK-H1, CK-H2, CK-H3,
   CK-H4, CK-H6, CK-H7
 ]
