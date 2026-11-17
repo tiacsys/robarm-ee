@@ -900,7 +900,7 @@
    ],
    "feature": [
     {
-     "@id": "RobArmEe::Canary::CanaryBoard::j1"
+     "@id": "RobArmEe::Canary::CanaryBoard::canaryLink"
     }
    ],
    "isAbstract": false,
@@ -910,7 +910,7 @@
    "name": "CanaryBoard",
    "ownedFeature": [
     {
-     "@id": "RobArmEe::Canary::CanaryBoard::j1"
+     "@id": "RobArmEe::Canary::CanaryBoard::canaryLink"
     }
    ],
    "ownedMember": [
@@ -918,7 +918,7 @@
      "@id": "RobArmEe::Canary::CanaryBoard/2/0"
     },
     {
-     "@id": "RobArmEe::Canary::CanaryBoard::j1"
+     "@id": "RobArmEe::Canary::CanaryBoard::canaryLink"
     }
    ],
    "ownedRelationship": [
@@ -1085,7 +1085,7 @@
      "@id": "RobArmEe::Canary::CanaryBoard"
     }
    ],
-   "body": "The canary PCBA (canary step C1): the connector J1, with R1 between its two pins\n(nets CANARY_A, CANARY_B). J1 carries Port = EE-PORT-0001 in the schematic, and\nCK-F1 compares its pins and nets with the pin map below. ",
+   "body": "The canary PCBA (canary step C1): the connector X1 for the canary link, with R1\nbetween its two pins (nets CANARY_A, CANARY_B). X1 carries portName = canaryLink,\nportType = CanaryHeader and portTypeID = EE-PORT-0001 in the schematic, and CK-F1\ncompares them and its pins and nets with the pin map below. ",
    "isLibraryElement": false,
    "owner": {
     "@id": "RobArmEe::Canary::CanaryBoard"
@@ -1107,15 +1107,15 @@
    "@type": "FeatureMembership",
    "isLibraryElement": false,
    "memberElement": {
-    "@id": "RobArmEe::Canary::CanaryBoard::j1"
+    "@id": "RobArmEe::Canary::CanaryBoard::canaryLink"
    },
-   "memberName": "j1",
+   "memberName": "canaryLink",
    "membershipOwningNamespace": {
     "@id": "RobArmEe::Canary::CanaryBoard"
    },
    "ownedRelatedElement": [
     {
-     "@id": "RobArmEe::Canary::CanaryBoard::j1"
+     "@id": "RobArmEe::Canary::CanaryBoard::canaryLink"
     }
    ],
    "owningType": {
@@ -1126,7 +1126,7 @@
      "@id": "RobArmEe::Canary::CanaryBoard"
     },
     {
-     "@id": "RobArmEe::Canary::CanaryBoard::j1"
+     "@id": "RobArmEe::Canary::CanaryBoard::canaryLink"
     }
    ],
    "source": [
@@ -1136,19 +1136,19 @@
    ],
    "target": [
     {
-     "@id": "RobArmEe::Canary::CanaryBoard::j1"
+     "@id": "RobArmEe::Canary::CanaryBoard::canaryLink"
     }
    ]
   }
  },
  {
   "identity": {
-   "@id": "RobArmEe::Canary::CanaryBoard::j1"
+   "@id": "RobArmEe::Canary::CanaryBoard::canaryLink"
   },
   "payload": {
-   "@id": "RobArmEe::Canary::CanaryBoard::j1",
+   "@id": "RobArmEe::Canary::CanaryBoard::canaryLink",
    "@type": "PortUsage",
-   "declaredName": "j1",
+   "declaredName": "canaryLink",
    "definition": [
     {
      "@id": "RobArmEe::Canary::CanaryHeader"
@@ -1172,18 +1172,18 @@
    "isLibraryElement": false,
    "isReference": true,
    "isVariation": false,
-   "name": "j1",
+   "name": "canaryLink",
    "ownedMember": [
     {
-     "@id": "RobArmEe::Canary::CanaryBoard::j1/1/0"
+     "@id": "RobArmEe::Canary::CanaryBoard::canaryLink/1/0"
     }
    ],
    "ownedRelationship": [
     {
-     "@id": "RobArmEe::Canary::CanaryBoard::j1/0"
+     "@id": "RobArmEe::Canary::CanaryBoard::canaryLink/0"
     },
     {
-     "@id": "RobArmEe::Canary::CanaryBoard::j1/1"
+     "@id": "RobArmEe::Canary::CanaryBoard::canaryLink/1"
     }
    ],
    "owner": {
@@ -1198,7 +1198,7 @@
    "owningType": {
     "@id": "RobArmEe::Canary::CanaryBoard"
    },
-   "qualifiedName": "RobArmEe::Canary::CanaryBoard::j1",
+   "qualifiedName": "RobArmEe::Canary::CanaryBoard::canaryLink",
    "type": [
     {
      "@id": "RobArmEe::Canary::CanaryHeader"
@@ -1208,21 +1208,21 @@
  },
  {
   "identity": {
-   "@id": "RobArmEe::Canary::CanaryBoard::j1/0"
+   "@id": "RobArmEe::Canary::CanaryBoard::canaryLink/0"
   },
   "payload": {
-   "@id": "RobArmEe::Canary::CanaryBoard::j1/0",
+   "@id": "RobArmEe::Canary::CanaryBoard::canaryLink/0",
    "@type": "FeatureTyping",
    "general": {
     "@id": "RobArmEe::Canary::CanaryHeader"
    },
    "isLibraryElement": false,
    "owningType": {
-    "@id": "RobArmEe::Canary::CanaryBoard::j1"
+    "@id": "RobArmEe::Canary::CanaryBoard::canaryLink"
    },
    "relatedElement": [
     {
-     "@id": "RobArmEe::Canary::CanaryBoard::j1"
+     "@id": "RobArmEe::Canary::CanaryBoard::canaryLink"
     },
     {
      "@id": "RobArmEe::Canary::CanaryHeader"
@@ -1230,11 +1230,11 @@
    ],
    "source": [
     {
-     "@id": "RobArmEe::Canary::CanaryBoard::j1"
+     "@id": "RobArmEe::Canary::CanaryBoard::canaryLink"
     }
    ],
    "specific": {
-    "@id": "RobArmEe::Canary::CanaryBoard::j1"
+    "@id": "RobArmEe::Canary::CanaryBoard::canaryLink"
    },
    "target": [
     {
@@ -1245,55 +1245,55 @@
     "@id": "RobArmEe::Canary::CanaryHeader"
    },
    "typedFeature": {
-    "@id": "RobArmEe::Canary::CanaryBoard::j1"
+    "@id": "RobArmEe::Canary::CanaryBoard::canaryLink"
    }
   }
  },
  {
   "identity": {
-   "@id": "RobArmEe::Canary::CanaryBoard::j1/1"
+   "@id": "RobArmEe::Canary::CanaryBoard::canaryLink/1"
   },
   "payload": {
-   "@id": "RobArmEe::Canary::CanaryBoard::j1/1",
+   "@id": "RobArmEe::Canary::CanaryBoard::canaryLink/1",
    "@type": "OwningMembership",
    "isLibraryElement": false,
    "memberElement": {
-    "@id": "RobArmEe::Canary::CanaryBoard::j1/1/0"
+    "@id": "RobArmEe::Canary::CanaryBoard::canaryLink/1/0"
    },
    "membershipOwningNamespace": {
-    "@id": "RobArmEe::Canary::CanaryBoard::j1"
+    "@id": "RobArmEe::Canary::CanaryBoard::canaryLink"
    },
    "ownedRelatedElement": [
     {
-     "@id": "RobArmEe::Canary::CanaryBoard::j1/1/0"
+     "@id": "RobArmEe::Canary::CanaryBoard::canaryLink/1/0"
     }
    ],
    "relatedElement": [
     {
-     "@id": "RobArmEe::Canary::CanaryBoard::j1"
+     "@id": "RobArmEe::Canary::CanaryBoard::canaryLink"
     },
     {
-     "@id": "RobArmEe::Canary::CanaryBoard::j1/1/0"
+     "@id": "RobArmEe::Canary::CanaryBoard::canaryLink/1/0"
     }
    ],
    "source": [
     {
-     "@id": "RobArmEe::Canary::CanaryBoard::j1"
+     "@id": "RobArmEe::Canary::CanaryBoard::canaryLink"
     }
    ],
    "target": [
     {
-     "@id": "RobArmEe::Canary::CanaryBoard::j1/1/0"
+     "@id": "RobArmEe::Canary::CanaryBoard::canaryLink/1/0"
     }
    ]
   }
  },
  {
   "identity": {
-   "@id": "RobArmEe::Canary::CanaryBoard::j1/1/0"
+   "@id": "RobArmEe::Canary::CanaryBoard::canaryLink/1/0"
   },
   "payload": {
-   "@id": "RobArmEe::Canary::CanaryBoard::j1/1/0",
+   "@id": "RobArmEe::Canary::CanaryBoard::canaryLink/1/0",
    "@type": "Multiplicity",
    "isAbstract": false,
    "isComposite": false,
@@ -1301,13 +1301,13 @@
    "isEnd": false,
    "isLibraryElement": false,
    "owner": {
-    "@id": "RobArmEe::Canary::CanaryBoard::j1"
+    "@id": "RobArmEe::Canary::CanaryBoard::canaryLink"
    },
    "owningNamespace": {
-    "@id": "RobArmEe::Canary::CanaryBoard::j1"
+    "@id": "RobArmEe::Canary::CanaryBoard::canaryLink"
    },
    "owningRelationship": {
-    "@id": "RobArmEe::Canary::CanaryBoard::j1/1"
+    "@id": "RobArmEe::Canary::CanaryBoard::canaryLink/1"
    }
   }
  },
@@ -1329,7 +1329,7 @@
      "@id": "RobArmEe::Canary::CanaryBoardAlt::variantName"
     },
     {
-     "@id": "RobArmEe::Canary::CanaryBoard::j1"
+     "@id": "RobArmEe::Canary::CanaryBoard::canaryLink"
     }
    ],
    "isAbstract": false,
@@ -1752,7 +1752,7 @@
      "@id": "RobArmEe::Canary::CanaryBoardDefault::variantName"
     },
     {
-     "@id": "RobArmEe::Canary::CanaryBoard::j1"
+     "@id": "RobArmEe::Canary::CanaryBoard::canaryLink"
     }
    ],
    "isAbstract": false,
@@ -2935,7 +2935,7 @@
      "@id": "RobArmEe::Canary::CanaryHeader"
     }
    ],
-   "body": "A 2-pin header, 2.54 mm pitch: J1 of the canary board. ",
+   "body": "A 2-pin header, 2.54 mm pitch: the canary link (X1) of the canary board. ",
    "isLibraryElement": false,
    "owner": {
     "@id": "RobArmEe::Canary::CanaryHeader"

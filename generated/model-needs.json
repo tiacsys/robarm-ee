@@ -48,7 +48,7 @@
           "content": "SysML ``PortDefinition`` ``RobArmEe::Canary::CanaryHeader``.",
           "id": "EE-PORT-0001",
           "instances": [
-            "RobArmEe::Canary::CanaryBoard::j1"
+            "RobArmEe::Canary::CanaryBoard::canaryLink"
           ],
           "part_of": [
             "EE-PCBA-0001"

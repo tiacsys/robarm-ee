@@ -33,7 +33,8 @@ cad:                                    # CK-D4 (plain Python, also without KiCa
   # CK-F7 the 1:1 between board defs of the EE model and pcba/ projects (XD-ADR-0128).
   projects: ["pcba/*/*.kicad_pro", "proto/*/*.kicad_pro"]
   # generated/<project>.connectors.json: the connector pin tables (CK-D7), cross-checked against
-  # KiCad's XML netlist (CK-D8, local) and the pin maps of the EE model (CK-F1).
+  # KiCad's XML netlist (CK-D8, local) and the pin maps of the EE model (CK-F1); CK-F22 warns on
+  # designator-like port names and connectors without an X designator.
   connectors: generated
   # WireViz harnesses, harness/<name>/<name>.yml (XD-ADR-0127): CK-F7 checks the 1:1 with the cable
   # defs of the EE model, CK-F1 their ends pin to pin against both ports; `curatrix cam` draws them.
@@ -58,6 +59,6 @@ variants: true                          # CK-B8: board variants across levels (X
 # missing turns an expected check off, and CK-H6 fails.
 expect: [
   CK-A1, CK-A3, CK-A6, CK-B1, CK-B2, CK-B3, CK-B5, CK-B8, CK-B6, CK-B7, CK-C1, CK-C2,
-  CK-D2, CK-D3, CK-D4, CK-D5, CK-D7, CK-D8, CK-D9, CK-D10, CK-E1, CK-E2, CK-E3, CK-E4, CK-F1, CK-F4a, CK-F4b, CK-F6, CK-F7, CK-F8, CK-F9, CK-F10, CK-F11, CK-F12, CK-G1, CK-G2, CK-H1, CK-H2, CK-H3,
+  CK-D2, CK-D3, CK-D4, CK-D5, CK-D7, CK-D8, CK-D9, CK-D10, CK-E1, CK-E2, CK-E3, CK-E4, CK-F1, CK-F4a, CK-F4b, CK-F6, CK-F7, CK-F8, CK-F9, CK-F10, CK-F11, CK-F12, CK-F22, CK-G1, CK-G2, CK-H1, CK-H2, CK-H3,
   CK-H4, CK-H6, CK-H7
 ]

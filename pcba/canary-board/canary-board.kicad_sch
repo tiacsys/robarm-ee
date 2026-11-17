@@ -550,7 +550,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "490e4107-2938-4ae2-9316-798eaae9ea86")
-		(property "Reference" "J1"
+		(property "Reference" "X1"
 			(at 80.01 95.25 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -592,7 +592,7 @@
 				)
 			)
 		)
-		(property "Description" "Canary connector J1, 2 pins"
+		(property "Description" "Canary link connector X1, 2 pins"
 			(at 80.01 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -625,7 +625,29 @@
 				)
 			)
 		)
-		(property "Port" "EE-PORT-0001"
+		(property "portName" "canaryLink"
+			(at 80.01 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "portType" "CanaryHeader"
+			(at 80.01 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "portTypeID" "EE-PORT-0001"
 			(at 80.01 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -645,7 +667,7 @@
 		(instances
 			(project "canary-board"
 				(path "/490883a3-078f-4b69-84bb-9c1ca1a27820"
-					(reference "J1")
+					(reference "X1")
 					(unit 1)
 				)
 			)
