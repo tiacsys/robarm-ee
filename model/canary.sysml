@@ -22,10 +22,10 @@ package RobArmEe {
         // The two variants of the canary board (XD-ADR-0136): KiCad assembly variants of the same
         // names in pcba/canary-board/. They differ only in R1 (fitted in `default`, DNP in `alt`).
         // Each names the configuration and the system usage it serves; curatrix computes the
-        // table "configuration -> variant per usage" and checks it (CK-B8). The canary
-        // configuration uses `default`; `alt` serves the same usage in the same configuration
-        // only through a planted error, so it names none (unused variants are not checked in
-        // iteration 1).
+        // table "configuration -> variant per usage" and checks it (CK-B8). `alt` serves no pair
+        // yet: the canary has one configuration and one usage, and `default` serves it. CK-B8
+        // still checks that `alt` is in the KiCad project; it is not reported as unused
+        // (iteration 1).
         part def CanaryBoardDefault :> CanaryBoard, DomainVariant {
             doc /* R1 fitted. */
             :>> variantName = "default";
