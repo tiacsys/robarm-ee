@@ -1,0 +1,9 @@
+# Accepted ERC/DRC findings of the canary board (XD-ADR-0126; format: xdmod/curatrix/src/curatrix/ercdrc.py).
+# An entry counts only when the newest commit that wrote it carries `Accepted-by: <name>`, has no
+# agent trailer and changes nothing but acceptance entries. Agents only propose entries.
+version: 1
+accepted:
+  - check: CK-F4b
+    rule: unconnected_items
+    items: all
+    reason: Placement and outline only; routing is not done in iteration 1 (XD-ADR-0144).
