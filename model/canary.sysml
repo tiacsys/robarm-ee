@@ -18,6 +18,11 @@ package RobArmEe {
                  * CK-F1 compares its pins and nets with the pin map below. */
             port j1 : CanaryHeader;
         }
+        // The board conforms to its space budget (task 5.28, XD-ADR-0134): box, holes and the
+        // position of J1 in the system model. Outline and holes in the .kicad_pcb come from the
+        // skeleton of the canary assembly by the StepUp push of a co-design change; EE places J1
+        // at the budget's position. A budget is no connector, so it is not a port of the board.
+        dependency from CanaryBoard to RobArmProduct::Canary::CanaryBoardSpace;
 
         // The two variants of the canary board (XD-ADR-0136): KiCad assembly variants of the same
         // names in pcba/canary-board/. They differ only in R1 (fitted in `default`, DNP in `alt`).

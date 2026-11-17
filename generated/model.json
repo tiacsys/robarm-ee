@@ -266,10 +266,13 @@
      "@id": "RobArmEe::Canary::CanaryBoard"
     },
     {
+     "@id": "RobArmEe::Canary/1/0"
+    },
+    {
      "@id": "RobArmEe::Canary::CanaryBoardDefault"
     },
     {
-     "@id": "RobArmEe::Canary/2/0"
+     "@id": "RobArmEe::Canary/3/0"
     },
     {
      "@id": "RobArmEe::Canary::CanaryBoardAlt"
@@ -287,7 +290,7 @@
      "@id": "RobArmEe::Canary::CanaryCable"
     },
     {
-     "@id": "RobArmEe::Canary/8/0"
+     "@id": "RobArmEe::Canary/9/0"
     }
    ],
    "ownedRelationship": [
@@ -317,6 +320,9 @@
     },
     {
      "@id": "RobArmEe::Canary/8"
+    },
+    {
+     "@id": "RobArmEe::Canary/9"
     }
    ],
    "owner": {
@@ -380,6 +386,92 @@
    "@type": "OwningMembership",
    "isLibraryElement": false,
    "memberElement": {
+    "@id": "RobArmEe::Canary/1/0"
+   },
+   "membershipOwningNamespace": {
+    "@id": "RobArmEe::Canary"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmEe::Canary/1/0"
+    }
+   ],
+   "relatedElement": [
+    {
+     "@id": "RobArmEe::Canary"
+    },
+    {
+     "@id": "RobArmEe::Canary/1/0"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmEe::Canary"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmEe::Canary/1/0"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEe::Canary/1/0"
+  },
+  "payload": {
+   "@id": "RobArmEe::Canary/1/0",
+   "@type": "Dependency",
+   "client": [
+    {
+     "@id": "RobArmEe::Canary::CanaryBoard"
+    }
+   ],
+   "isLibraryElement": false,
+   "owner": {
+    "@id": "RobArmEe::Canary"
+   },
+   "owningNamespace": {
+    "@id": "RobArmEe::Canary"
+   },
+   "owningRelationship": {
+    "@id": "RobArmEe::Canary/1"
+   },
+   "relatedElement": [
+    {
+     "@id": "RobArmEe::Canary::CanaryBoard"
+    },
+    {
+     "@id": "lib:RobArmProduct::Canary::CanaryBoardSpace"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmEe::Canary::CanaryBoard"
+    }
+   ],
+   "supplier": [
+    {
+     "@id": "lib:RobArmProduct::Canary::CanaryBoardSpace"
+    }
+   ],
+   "target": [
+    {
+     "@id": "lib:RobArmProduct::Canary::CanaryBoardSpace"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEe::Canary/2"
+  },
+  "payload": {
+   "@id": "RobArmEe::Canary/2",
+   "@type": "OwningMembership",
+   "isLibraryElement": false,
+   "memberElement": {
     "@id": "RobArmEe::Canary::CanaryBoardDefault"
    },
    "memberName": "CanaryBoardDefault",
@@ -413,21 +505,21 @@
  },
  {
   "identity": {
-   "@id": "RobArmEe::Canary/2"
+   "@id": "RobArmEe::Canary/3"
   },
   "payload": {
-   "@id": "RobArmEe::Canary/2",
+   "@id": "RobArmEe::Canary/3",
    "@type": "OwningMembership",
    "isLibraryElement": false,
    "memberElement": {
-    "@id": "RobArmEe::Canary/2/0"
+    "@id": "RobArmEe::Canary/3/0"
    },
    "membershipOwningNamespace": {
     "@id": "RobArmEe::Canary"
    },
    "ownedRelatedElement": [
     {
-     "@id": "RobArmEe::Canary/2/0"
+     "@id": "RobArmEe::Canary/3/0"
     }
    ],
    "relatedElement": [
@@ -435,7 +527,7 @@
      "@id": "RobArmEe::Canary"
     },
     {
-     "@id": "RobArmEe::Canary/2/0"
+     "@id": "RobArmEe::Canary/3/0"
     }
    ],
    "source": [
@@ -445,17 +537,17 @@
    ],
    "target": [
     {
-     "@id": "RobArmEe::Canary/2/0"
+     "@id": "RobArmEe::Canary/3/0"
     }
    ]
   }
  },
  {
   "identity": {
-   "@id": "RobArmEe::Canary/2/0"
+   "@id": "RobArmEe::Canary/3/0"
   },
   "payload": {
-   "@id": "RobArmEe::Canary/2/0",
+   "@id": "RobArmEe::Canary/3/0",
    "@type": "Dependency",
    "client": [
     {
@@ -470,7 +562,7 @@
     "@id": "RobArmEe::Canary"
    },
    "owningRelationship": {
-    "@id": "RobArmEe::Canary/2"
+    "@id": "RobArmEe::Canary/3"
    },
    "relatedElement": [
     {
@@ -508,10 +600,10 @@
  },
  {
   "identity": {
-   "@id": "RobArmEe::Canary/3"
+   "@id": "RobArmEe::Canary/4"
   },
   "payload": {
-   "@id": "RobArmEe::Canary/3",
+   "@id": "RobArmEe::Canary/4",
    "@type": "OwningMembership",
    "isLibraryElement": false,
    "memberElement": {
@@ -548,10 +640,10 @@
  },
  {
   "identity": {
-   "@id": "RobArmEe::Canary/4"
+   "@id": "RobArmEe::Canary/5"
   },
   "payload": {
-   "@id": "RobArmEe::Canary/4",
+   "@id": "RobArmEe::Canary/5",
    "@type": "OwningMembership",
    "isLibraryElement": false,
    "memberElement": {
@@ -588,10 +680,10 @@
  },
  {
   "identity": {
-   "@id": "RobArmEe::Canary/5"
+   "@id": "RobArmEe::Canary/6"
   },
   "payload": {
-   "@id": "RobArmEe::Canary/5",
+   "@id": "RobArmEe::Canary/6",
    "@type": "OwningMembership",
    "isLibraryElement": false,
    "memberElement": {
@@ -628,10 +720,10 @@
  },
  {
   "identity": {
-   "@id": "RobArmEe::Canary/6"
+   "@id": "RobArmEe::Canary/7"
   },
   "payload": {
-   "@id": "RobArmEe::Canary/6",
+   "@id": "RobArmEe::Canary/7",
    "@type": "OwningMembership",
    "isLibraryElement": false,
    "memberElement": {
@@ -668,10 +760,10 @@
  },
  {
   "identity": {
-   "@id": "RobArmEe::Canary/7"
+   "@id": "RobArmEe::Canary/8"
   },
   "payload": {
-   "@id": "RobArmEe::Canary/7",
+   "@id": "RobArmEe::Canary/8",
    "@type": "OwningMembership",
    "isLibraryElement": false,
    "memberElement": {
@@ -708,21 +800,21 @@
  },
  {
   "identity": {
-   "@id": "RobArmEe::Canary/8"
+   "@id": "RobArmEe::Canary/9"
   },
   "payload": {
-   "@id": "RobArmEe::Canary/8",
+   "@id": "RobArmEe::Canary/9",
    "@type": "OwningMembership",
    "isLibraryElement": false,
    "memberElement": {
-    "@id": "RobArmEe::Canary/8/0"
+    "@id": "RobArmEe::Canary/9/0"
    },
    "membershipOwningNamespace": {
     "@id": "RobArmEe::Canary"
    },
    "ownedRelatedElement": [
     {
-     "@id": "RobArmEe::Canary/8/0"
+     "@id": "RobArmEe::Canary/9/0"
     }
    ],
    "relatedElement": [
@@ -730,7 +822,7 @@
      "@id": "RobArmEe::Canary"
     },
     {
-     "@id": "RobArmEe::Canary/8/0"
+     "@id": "RobArmEe::Canary/9/0"
     }
    ],
    "source": [
@@ -740,17 +832,17 @@
    ],
    "target": [
     {
-     "@id": "RobArmEe::Canary/8/0"
+     "@id": "RobArmEe::Canary/9/0"
     }
    ]
   }
  },
  {
   "identity": {
-   "@id": "RobArmEe::Canary/8/0"
+   "@id": "RobArmEe::Canary/9/0"
   },
   "payload": {
-   "@id": "RobArmEe::Canary/8/0",
+   "@id": "RobArmEe::Canary/9/0",
    "@type": "Dependency",
    "client": [
     {
@@ -765,7 +857,7 @@
     "@id": "RobArmEe::Canary"
    },
    "owningRelationship": {
-    "@id": "RobArmEe::Canary/8"
+    "@id": "RobArmEe::Canary/9"
    },
    "relatedElement": [
     {
@@ -1279,7 +1371,7 @@
     "@id": "RobArmEe::Canary"
    },
    "owningRelationship": {
-    "@id": "RobArmEe::Canary/3"
+    "@id": "RobArmEe::Canary/4"
    },
    "qualifiedName": "RobArmEe::Canary::CanaryBoardAlt"
   }
@@ -1702,7 +1794,7 @@
     "@id": "RobArmEe::Canary"
    },
    "owningRelationship": {
-    "@id": "RobArmEe::Canary/1"
+    "@id": "RobArmEe::Canary/2"
    },
    "qualifiedName": "RobArmEe::Canary::CanaryBoardDefault"
   }
@@ -2132,7 +2224,7 @@
     "@id": "RobArmEe::Canary"
    },
    "owningRelationship": {
-    "@id": "RobArmEe::Canary/7"
+    "@id": "RobArmEe::Canary/8"
    },
    "qualifiedName": "RobArmEe::Canary::CanaryCable",
    "shortName": "EE-HAR-0001"
@@ -2743,7 +2835,7 @@
     "@id": "RobArmEe::Canary"
    },
    "owningRelationship": {
-    "@id": "RobArmEe::Canary/4"
+    "@id": "RobArmEe::Canary/5"
    },
    "qualifiedName": "RobArmEe::Canary::CanaryHeader",
    "shortName": "EE-PORT-0001"
@@ -4555,7 +4647,7 @@
     "@id": "RobArmEe::Canary"
    },
    "owningRelationship": {
-    "@id": "RobArmEe::Canary/6"
+    "@id": "RobArmEe::Canary/7"
    },
    "qualifiedName": "RobArmEe::Canary::CanaryLeadPlug",
    "shortName": "EE-PORT-0002"
@@ -6333,7 +6425,7 @@
     "@id": "RobArmEe::Canary"
    },
    "owningRelationship": {
-    "@id": "RobArmEe::Canary/5"
+    "@id": "RobArmEe::Canary/6"
    },
    "qualifiedName": "RobArmEe::Canary::CanaryTestLead"
   }
@@ -7329,6 +7421,20 @@
    "isLibraryElement": true,
    "name": "canary",
    "qualifiedName": "RobArmConfigs::canary"
+  }
+ },
+ {
+  "identity": {
+   "@id": "lib:RobArmProduct::Canary::CanaryBoardSpace"
+  },
+  "payload": {
+   "@id": "lib:RobArmProduct::Canary::CanaryBoardSpace",
+   "@type": "PortDefinition",
+   "declaredName": "CanaryBoardSpace",
+   "declaredShortName": "SYS-IF-0001",
+   "isLibraryElement": true,
+   "name": "CanaryBoardSpace",
+   "qualifiedName": "RobArmProduct::Canary::CanaryBoardSpace"
   }
  },
  {
