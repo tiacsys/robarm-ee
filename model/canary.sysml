@@ -46,6 +46,35 @@ package RobArmEe {
             inout port a : PinSignal { :>> pin = "1"; :>> net = "CANARY_A"; }
             inout port b : PinSignal { :>> pin = "2"; :>> net = "CANARY_B"; }
         }
+
+        // The canary harness (task 5.22): one cable from J1 of the canary board to a bought part,
+        // so the harness chain (WireViz YAML, CK-F1 against both ends, `curatrix cam`, the
+        // harness-canary-cable document) runs on the canary. harness/canary-cable/canary-cable.yml
+        // names the cable by its ID (metadata TraceID) and each end by its port (`Port:` in the
+        // connector notes).
+
+        // An external part (XD-ADR-0135): a bought two-wire test lead with a 2-pin plug. It has a
+        // port with a pin map, but no KiCad project.
+        part def CanaryTestLead :> ExternalPart {
+            doc /* A bought test lead: a 2-pin Dupont plug on two wires to the bench meter. */
+            port plug : CanaryLeadPlug;
+        }
+        port def <'EE-PORT-0002'> CanaryLeadPlug :> ConnectorPort {
+            doc /* The 2-pin plug of the test lead, 2.54 mm pitch. */
+            :>> connector = "Dupont 1x02 male";
+            inout port a : PinSignal { :>> pin = "1"; :>> net = "CANARY_A"; }
+            inout port b : PinSignal { :>> pin = "2"; :>> net = "CANARY_B"; }
+        }
+
+        // The cable def (EE-HAR): its ends mate with J1 of the board and with the lead's plug, so
+        // curatrix derives `connects` to both ports. It realizes the canary unit (a board, a part
+        // and a bit of firmware; no orphans, XD-RULE-0010).
+        part def <'EE-HAR-0001'> CanaryCable :> Cable {
+            doc /* Two wires, 2-pin socket housings at both ends. */
+            port boardEnd : ~CanaryHeader;
+            port leadEnd : ~CanaryLeadPlug;
+        }
+        dependency from CanaryCable to RobArmProduct::Canary::CanaryUnit;
     }
 
     // The block diagram of the canary board: the board with its connectors (no circuit blocks

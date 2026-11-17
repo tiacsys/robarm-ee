@@ -6,7 +6,7 @@ rules of this repo. Run every command from the workspace root.
 ## What this repo is
 
 Electrical design: one KiCad project per PCBA (`pcba/<name>/`), the wiring of each prototype
-configuration (`proto/<config>/`), cables (`harness/`, if WireViz is adopted), local library
+configuration (`proto/<config>/`), cables (`harness/<name>/`, WireViz YAML, XD-ADR-0127), local library
 parts (`lib/`), scripted EE checks (`tests/`), and one document, `docs/ee-design/` (D135).
 
 ## Rules

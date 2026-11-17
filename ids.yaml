@@ -3,9 +3,12 @@
 # `curatrix ids new` / `curatrix ids fix`.
 EE-CMP:
   - 1
+EE-HAR:
+  - 1
 EE-PCBA:
   - 1
 EE-PORT:
   - 1
+  - 2
 EE-REQ: []
 EE-TC: []
