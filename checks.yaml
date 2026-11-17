@@ -32,6 +32,9 @@ cad:                                    # CK-D4 (plain Python, also without KiCa
   # sheet is <name>.kicad_sch (hierarchical sheets are followed). CK-F6 checks the folders,
   # CK-F7 the 1:1 between board defs of the EE model and pcba/ projects (XD-ADR-0128).
   projects: ["pcba/*/*.kicad_pro", "proto/*/*.kicad_pro"]
+  # generated/<project>.connectors.json: the connector pin tables (CK-D7), cross-checked against
+  # KiCad's XML netlist (CK-D8, local) and the pin maps of the EE model (CK-F1).
+  connectors: generated
   needs: generated/cad-needs.json
 
 requirements: true                      # CK-E2, CK-E3 on the EE requirements
@@ -40,13 +43,12 @@ variants: true                          # CK-B8: board variants across levels (X
                                         # model.upstream and the KiCad projects of cad.projects. No
                                         # Zephyr board roots: robarm-sw has no board of its own yet.
 
-# Domain checks (CK-F1 netlist vs. pin maps, CK-F4 ERC) are added as `commands` once the first
-# KiCad project exists.
+# KiCad ERC and DRC (CK-F4a, CK-F4b) come with task 5.19.
 
 # CK-H6: exactly the checks this repo runs (built-in and commands). A section that goes
 # missing turns an expected check off, and CK-H6 fails.
 expect: [
   CK-A1, CK-A3, CK-A6, CK-B1, CK-B2, CK-B3, CK-B5, CK-B8, CK-B6, CK-B7, CK-C1, CK-C2,
-  CK-D2, CK-D3, CK-D4, CK-D5, CK-E1, CK-E2, CK-E3, CK-E4, CK-F6, CK-F7, CK-G1, CK-G2, CK-H1, CK-H2, CK-H3,
+  CK-D2, CK-D3, CK-D4, CK-D5, CK-D7, CK-D8, CK-E1, CK-E2, CK-E3, CK-E4, CK-F1, CK-F6, CK-F7, CK-G1, CK-G2, CK-H1, CK-H2, CK-H3,
   CK-H4, CK-H6, CK-H7
 ]

@@ -763,7 +763,7 @@
      "@id": "RobArmEe::Canary::CanaryBoard"
     }
    ],
-   "body": "The canary PCBA. Planned for canary step C1: the connector J1, with R1 between its\ntwo pins (nets CANARY_A, CANARY_B). The schematic has R1 only; J1 is drawn in\ntask 5.18, and CK-F1 then compares it with the pin map below. ",
+   "body": "The canary PCBA (canary step C1): the connector J1, with R1 between its two pins\n(nets CANARY_A, CANARY_B). J1 carries Port = EE-PORT-0001 in the schematic, and\nCK-F1 compares its pins and nets with the pin map below. ",
    "isLibraryElement": false,
    "owner": {
     "@id": "RobArmEe::Canary::CanaryBoard"
@@ -2023,7 +2023,7 @@
      "@id": "RobArmEe::Canary::CanaryHeader"
     }
    ],
-   "body": "Planned: a 2-pin header, 2.54 mm pitch (task 5.18). ",
+   "body": "A 2-pin header, 2.54 mm pitch: J1 of the canary board. ",
    "isLibraryElement": false,
    "owner": {
     "@id": "RobArmEe::Canary::CanaryHeader"
