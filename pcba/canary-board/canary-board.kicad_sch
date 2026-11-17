@@ -7,6 +7,7 @@
 	(title_block
 		(title "Canary board")
 		(comment 1 "Canary trace chain, plan task 5.3; configuration SYS-CFG-0001")
+		(comment 2 "Version ${XD_VERSION}")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_01x02"
