@@ -24,7 +24,8 @@ parts (`lib/`), scripted EE checks (`tests/`), and one document, `docs/ee-design
   `generated/` and `views/`.
 - **Trace fields** are hidden symbol or sheet fields: `TraceID`, `Realizes`, `Satisfies`,
   `Conforms`, `Status`, `Configs`. The project text variable `TraceID` names the board def's
-  `EE-PCBA` ID: a reference only, the need comes from the model. EE and SW never link
+  `EE-PCBA` ID: a reference only, the need comes from the model (with `configs` from the
+  `SYS-CFG` that configures the realized `SYS-EL`); no other variable goes next to it. EE and SW never link
   to each other: both link to the interfaces (`SYS-IF`) in robarm-syseng (D36).
 - After a KiCad change: `curatrix gen cad-needs robarm-ee`, commit `generated/cad-needs.json`.
 - Tests that verify system requirements or interfaces belong to robarm-integration (D115).

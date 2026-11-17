@@ -4,6 +4,11 @@ One folder per PCBA, `pcba/<name>/`, with one KiCad project: `<name>.kicad_pro`,
 `<name>.kicad_sch`, `<name>.kicad_pcb`, plus the project's own `sym-lib-table` and
 `fp-lib-table`. The number of PCBAs is decided in the system design (D28).
 
+Each project is 1:1 with a board def in the EE model (`model/`, XD-ADR-0128). The project's text
+variable `TraceID` names the board def's `EE-PCBA` ID; it is a reference only. Links (`realizes`)
+and `configs` come from the model, so no other trace variable goes into the `.kicad_pro`
+(`curatrix gen cad-needs` reports one).
+
 ## Library tables
 
 KiCad must never use the libraries of the user's own KiCad setup (D88). Each project has its own

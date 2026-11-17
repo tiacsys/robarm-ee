@@ -6,6 +6,9 @@
     "": {
       "needs": {
         "EE-PCBA-0001": {
+          "configs": [
+            "SYS-CFG-0001"
+          ],
           "content": "SysML ``PartDefinition`` ``RobArmEe::Canary::CanaryBoard``.",
           "id": "EE-PCBA-0001",
           "qualified_name": "RobArmEe::Canary::CanaryBoard",
