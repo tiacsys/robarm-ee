@@ -320,6 +320,16 @@
         "name": "canary-board",
         "uuid": "490883a3-078f-4b69-84bb-9c1ca1a27820"
       }
+    ],
+    "variants": [
+      {
+        "name": "default",
+        "description": "R1 fitted (canary configuration SYS-CFG-0001)"
+      },
+      {
+        "name": "alt",
+        "description": "R1 not fitted"
+      }
     ]
   },
   "sheets": [

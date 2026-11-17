@@ -19,6 +19,25 @@ package RobArmEe {
             port j1 : CanaryHeader;
         }
 
+        // The two variants of the canary board (XD-ADR-0136): KiCad assembly variants of the same
+        // names in pcba/canary-board/. They differ only in R1 (fitted in `default`, DNP in `alt`).
+        // Each names the configuration and the system usage it serves; curatrix computes the
+        // table "configuration -> variant per usage" and checks it (CK-B8). The canary
+        // configuration uses `default`; `alt` serves the same usage in the same configuration
+        // only through a planted error, so it names none (unused variants are not checked in
+        // iteration 1).
+        part def CanaryBoardDefault :> CanaryBoard, DomainVariant {
+            doc /* R1 fitted. */
+            :>> variantName = "default";
+        }
+        dependency from CanaryBoardDefault to RobArmConfigs::canary,
+            RobArmProduct::Canary::CanaryContext::canaryUnit;
+
+        part def CanaryBoardAlt :> CanaryBoard, DomainVariant {
+            doc /* R1 not fitted (DNP). */
+            :>> variantName = "alt";
+        }
+
         // The canary connector J1 and its pin map (pin number and net name per signal).
         // J1 is not drawn in the KiCad schematic yet; CK-F1 (task 5.18) compares them.
         port def <'EE-PORT-0001'> CanaryHeader :> ConnectorPort {
