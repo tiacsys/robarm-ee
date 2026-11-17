@@ -45,11 +45,13 @@ variants: true                          # CK-B8: board variants across levels (X
 
 # KiCad ERC and DRC (CK-F4a, CK-F4b, local) of every project from cad.projects, accepted findings in
 # pcba/<name>/accepted.yaml (CK-F9) and the severities of the template (CK-F8), XD-ADR-0126.
+# The CAM jobset of each pcba/ project follows the shared xdmod template (CK-F10) and the frames and
+# silkscreen show ${XD_VERSION} (CK-F11); `curatrix cam robarm-ee` runs it on a copy under build/.
 
 # CK-H6: exactly the checks this repo runs (built-in and commands). A section that goes
 # missing turns an expected check off, and CK-H6 fails.
 expect: [
   CK-A1, CK-A3, CK-A6, CK-B1, CK-B2, CK-B3, CK-B5, CK-B8, CK-B6, CK-B7, CK-C1, CK-C2,
-  CK-D2, CK-D3, CK-D4, CK-D5, CK-D7, CK-D8, CK-E1, CK-E2, CK-E3, CK-E4, CK-F1, CK-F4a, CK-F4b, CK-F6, CK-F7, CK-F8, CK-F9, CK-G1, CK-G2, CK-H1, CK-H2, CK-H3,
+  CK-D2, CK-D3, CK-D4, CK-D5, CK-D7, CK-D8, CK-E1, CK-E2, CK-E3, CK-E4, CK-F1, CK-F4a, CK-F4b, CK-F6, CK-F7, CK-F8, CK-F9, CK-F10, CK-F11, CK-G1, CK-G2, CK-H1, CK-H2, CK-H3,
   CK-H4, CK-H6, CK-H7
 ]

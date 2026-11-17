@@ -1,0 +1,318 @@
+{
+  "meta": {
+    "version": 1
+  },
+  "jobs": [
+    {
+      "id": "sch-svg",
+      "type": "sch_export_plot_svg",
+      "description": "schematic SVG, one file per sheet",
+      "settings": {
+        "output_filename": "schematic-svg",
+        "format": "svg",
+        "plot_all": true,
+        "plot_drawing_sheet": true
+      }
+    },
+    {
+      "id": "netlist",
+      "type": "sch_export_netlist",
+      "description": "XML netlist (holds every variant)",
+      "settings": {
+        "output_filename": "netlist.xml",
+        "format": "xml"
+      }
+    },
+    {
+      "id": "gerbers",
+      "type": "pcb_export_gerbers",
+      "description": "Gerber files and job file",
+      "settings": {
+        "output_filename": "gerbers/",
+        "layers": [
+          "F.Cu",
+          "B.Cu",
+          "F.Paste",
+          "B.Paste",
+          "F.SilkS",
+          "B.SilkS",
+          "F.Mask",
+          "B.Mask",
+          "Edge.Cuts"
+        ],
+        "create_gerber_job_file": true
+      }
+    },
+    {
+      "id": "drill",
+      "type": "pcb_export_drill",
+      "description": "Excellon drill files",
+      "settings": {
+        "output_dir": "gerbers/",
+        "format": "excellon",
+        "generate_map": false
+      }
+    },
+    {
+      "id": "sch-pdf-default",
+      "type": "sch_export_plot_pdf",
+      "description": "schematic PDF (default)",
+      "settings": {
+        "output_filename": "canary-board-schematic-default.pdf",
+        "format": "pdf",
+        "plot_all": true,
+        "plot_drawing_sheet": true,
+        "variant_names": [
+          "default"
+        ]
+      }
+    },
+    {
+      "id": "sch-pdf-alt",
+      "type": "sch_export_plot_pdf",
+      "description": "schematic PDF (alt)",
+      "settings": {
+        "output_filename": "canary-board-schematic-alt.pdf",
+        "format": "pdf",
+        "plot_all": true,
+        "plot_drawing_sheet": true,
+        "variant_names": [
+          "alt"
+        ]
+      }
+    },
+    {
+      "id": "bom-default",
+      "type": "sch_export_bom",
+      "description": "BOM CSV (default)",
+      "settings": {
+        "output_filename": "bom-default.csv",
+        "fields_ordered": [
+          "Reference",
+          "Value",
+          "Footprint",
+          "${QUANTITY}",
+          "${DNP}",
+          "Manufacturer",
+          "MPN"
+        ],
+        "fields_labels": [
+          "Refs",
+          "Value",
+          "Footprint",
+          "Qty",
+          "DNP",
+          "Manufacturer",
+          "MPN"
+        ],
+        "fields_group_by": [
+          "Value",
+          "Footprint"
+        ],
+        "field_delimiter": ",",
+        "string_delimiter": "\"",
+        "ref_delimiter": ",",
+        "ref_range_delimiter": "-",
+        "variant_names": [
+          "default"
+        ]
+      }
+    },
+    {
+      "id": "bom-alt",
+      "type": "sch_export_bom",
+      "description": "BOM CSV (alt)",
+      "settings": {
+        "output_filename": "bom-alt.csv",
+        "fields_ordered": [
+          "Reference",
+          "Value",
+          "Footprint",
+          "${QUANTITY}",
+          "${DNP}",
+          "Manufacturer",
+          "MPN"
+        ],
+        "fields_labels": [
+          "Refs",
+          "Value",
+          "Footprint",
+          "Qty",
+          "DNP",
+          "Manufacturer",
+          "MPN"
+        ],
+        "fields_group_by": [
+          "Value",
+          "Footprint"
+        ],
+        "field_delimiter": ",",
+        "string_delimiter": "\"",
+        "ref_delimiter": ",",
+        "ref_range_delimiter": "-",
+        "variant_names": [
+          "alt"
+        ]
+      }
+    },
+    {
+      "id": "pos-default",
+      "type": "pcb_export_pos",
+      "description": "pick-and-place CSV (default)",
+      "settings": {
+        "output_filename": "pos-default.csv",
+        "format": "csv",
+        "units": "mm",
+        "side": "both",
+        "single_file": true,
+        "exclude_dnp": true,
+        "variant": "default"
+      }
+    },
+    {
+      "id": "pos-alt",
+      "type": "pcb_export_pos",
+      "description": "pick-and-place CSV (alt)",
+      "settings": {
+        "output_filename": "pos-alt.csv",
+        "format": "csv",
+        "units": "mm",
+        "side": "both",
+        "single_file": true,
+        "exclude_dnp": true,
+        "variant": "alt"
+      }
+    },
+    {
+      "id": "step-default",
+      "type": "pcb_export_3d",
+      "description": "STEP model (default)",
+      "settings": {
+        "output_filename": "canary-board-default.step",
+        "format": "step",
+        "include_dnp": false,
+        "export_silkscreen": true,
+        "overwrite": true,
+        "variant": "default"
+      }
+    },
+    {
+      "id": "step-alt",
+      "type": "pcb_export_3d",
+      "description": "STEP model (alt)",
+      "settings": {
+        "output_filename": "canary-board-alt.step",
+        "format": "step",
+        "include_dnp": false,
+        "export_silkscreen": true,
+        "overwrite": true,
+        "variant": "alt"
+      }
+    },
+    {
+      "id": "render-top-default",
+      "type": "pcb_render",
+      "description": "top view, orthographic (default)",
+      "settings": {
+        "output_filename": "render-top-default.png",
+        "format": "png",
+        "side": "top",
+        "perspective": false,
+        "quality": "basic",
+        "width": 1600,
+        "height": 1000,
+        "variant": "default"
+      }
+    },
+    {
+      "id": "render-top-alt",
+      "type": "pcb_render",
+      "description": "top view, orthographic (alt)",
+      "settings": {
+        "output_filename": "render-top-alt.png",
+        "format": "png",
+        "side": "top",
+        "perspective": false,
+        "quality": "basic",
+        "width": 1600,
+        "height": 1000,
+        "variant": "alt"
+      }
+    },
+    {
+      "id": "render-bottom-default",
+      "type": "pcb_render",
+      "description": "bottom view, orthographic (default)",
+      "settings": {
+        "output_filename": "render-bottom-default.png",
+        "format": "png",
+        "side": "bottom",
+        "perspective": false,
+        "quality": "basic",
+        "width": 1600,
+        "height": 1000,
+        "variant": "default"
+      }
+    },
+    {
+      "id": "render-bottom-alt",
+      "type": "pcb_render",
+      "description": "bottom view, orthographic (alt)",
+      "settings": {
+        "output_filename": "render-bottom-alt.png",
+        "format": "png",
+        "side": "bottom",
+        "perspective": false,
+        "quality": "basic",
+        "width": 1600,
+        "height": 1000,
+        "variant": "alt"
+      }
+    },
+    {
+      "id": "render-3d-default",
+      "type": "pcb_render",
+      "description": "3D view (default)",
+      "settings": {
+        "output_filename": "render-3d-default.png",
+        "format": "png",
+        "side": "top",
+        "perspective": true,
+        "rotation_x": -45,
+        "rotation_z": 30,
+        "quality": "high",
+        "width": 1600,
+        "height": 1000,
+        "variant": "default"
+      }
+    },
+    {
+      "id": "render-3d-alt",
+      "type": "pcb_render",
+      "description": "3D view (alt)",
+      "settings": {
+        "output_filename": "render-3d-alt.png",
+        "format": "png",
+        "side": "top",
+        "perspective": true,
+        "rotation_x": -45,
+        "rotation_z": 30,
+        "quality": "high",
+        "width": 1600,
+        "height": 1000,
+        "variant": "alt"
+      }
+    }
+  ],
+  "outputs": [
+    {
+      "id": "out",
+      "type": "folder",
+      "only": [],
+      "description": "all",
+      "settings": {
+        "output_path": "${XD_CAM_OUT}/canary-board"
+      }
+    }
+  ]
+}
