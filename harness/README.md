@@ -5,9 +5,10 @@ One folder per cable, `harness/<name>/`, with one WireViz YAML `<name>.yml` as i
 model (`XdDomain::Cable`, an `EE-HAR` ID), named in the YAML as `metadata: {TraceID: EE-HAR-....}`;
 the folder is named after the def (`CanaryCable` -> `canary-cable`).
 
-- Each connector names the `EE-PORT` it mates with (on our boards or on external parts) on a line
-  `Port: EE-PORT-....` of its `notes`; its `pins` and `pinlabels` are the pin numbers and net names
-  of that port's pin map. CK-F1 checks them and the wiring pin to pin against both ends; CK-F7
+- Each connector names the end port of the cable def it is, on three lines of its `notes`:
+  `portName: boardEnd` (the port usage), `portType: CanaryHeader` (its def) and
+  `portTypeID: EE-PORT-....` (the def's ID; the port it mates with, on our boards or on external
+  parts). Its `pins` and `pinlabels` are the pin numbers and net names of that port's pin map. CK-F1 checks them and the wiring pin to pin against both ends; CK-F7
   checks the 1:1 with the model.
 - `curatrix cam robarm-ee <name>` runs WireViz (diagram SVG and PNG, BOM) into
   `build/robarm-ee/cam/<name>/<version>/`; the version comes from tags `<name>/vX.Y.Z`.

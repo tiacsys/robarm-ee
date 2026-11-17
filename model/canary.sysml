@@ -13,14 +13,15 @@ package RobArmEe {
         // so the board redefines none; its connector conforms to no SYS-IF (allowed for ports,
         // XD-ADR-0133).
         part def <'EE-PCBA-0001'> CanaryBoard :> RobArmProduct::Canary::CanaryUnit, Pcba {
-            doc /* The canary PCBA (canary step C1): the connector J1, with R1 between its two pins
-                 * (nets CANARY_A, CANARY_B). J1 carries Port = EE-PORT-0001 in the schematic, and
-                 * CK-F1 compares its pins and nets with the pin map below. */
-            port j1 : CanaryHeader;
+            doc /* The canary PCBA (canary step C1): the connector X1 for the canary link, with R1
+                 * between its two pins (nets CANARY_A, CANARY_B). X1 carries portName = canaryLink,
+                 * portType = CanaryHeader and portTypeID = EE-PORT-0001 in the schematic, and CK-F1
+                 * compares them and its pins and nets with the pin map below. */
+            port canaryLink : CanaryHeader;
         }
         // The board conforms to its space budget (task 5.28, XD-ADR-0134): box, holes and the
         // position of J1 in the system model. Outline and holes in the .kicad_pcb come from the
-        // skeleton of the canary assembly by the StepUp push of a co-design change; EE places J1
+        // skeleton of the canary assembly by the StepUp push of a co-design change; EE places X1
         // at the budget's position. A budget is no connector, so it is not a port of the board.
         dependency from CanaryBoard to RobArmProduct::Canary::CanaryBoardSpace;
 
@@ -43,20 +44,21 @@ package RobArmEe {
             :>> variantName = "alt";
         }
 
-        // The canary connector J1 and its pin map (pin number and net name per signal).
-        // J1 in the KiCad schematic names this port def (Port = EE-PORT-0001); CK-F1 compares them.
+        // The canary connector and its pin map (pin number and net name per signal). X1 in the KiCad
+        // schematic names the port canaryLink of the board and this def (portType, portTypeID);
+        // CK-F1 compares them.
         port def <'EE-PORT-0001'> CanaryHeader :> ConnectorPort {
-            doc /* A 2-pin header, 2.54 mm pitch: J1 of the canary board. */
+            doc /* A 2-pin header, 2.54 mm pitch: the canary link (X1) of the canary board. */
             :>> connector = "PinHeader_1x02_P2.54mm";
             inout port a : PinSignal { :>> pin = "1"; :>> net = "CANARY_A"; }
             inout port b : PinSignal { :>> pin = "2"; :>> net = "CANARY_B"; }
         }
 
-        // The canary harness (task 5.22): one cable from J1 of the canary board to a bought part,
+        // The canary harness (task 5.22): one cable from the canary link of the board to a bought part,
         // so the harness chain (WireViz YAML, CK-F1 against both ends, `curatrix cam`, the
         // harness-canary-cable document) runs on the canary. harness/canary-cable/canary-cable.yml
-        // names the cable by its ID (metadata TraceID) and each end by its port (`Port:` in the
-        // connector notes).
+        // names the cable by its ID (metadata TraceID) and each end by its end port of the cable def
+        // (`portName:`, `portType:`, `portTypeID:` in the connector notes).
 
         // An external part (XD-ADR-0135): a bought two-wire test lead with a 2-pin plug. It has a
         // port with a pin map, but no KiCad project.
@@ -71,7 +73,7 @@ package RobArmEe {
             inout port b : PinSignal { :>> pin = "2"; :>> net = "CANARY_B"; }
         }
 
-        // The cable def (EE-HAR): its ends mate with J1 of the board and with the lead's plug, so
+        // The cable def (EE-HAR): its ends mate with the canary link of the board and with the lead's plug, so
         // curatrix derives `connects` to both ports. It realizes the canary unit (a board, a part
         // and a bit of firmware; no orphans, XD-RULE-0010). That is a canary shortcut: harnesses of
         // the arm realize their own system element or conform to an interface, not a whole unit.
