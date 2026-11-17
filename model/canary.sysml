@@ -68,7 +68,8 @@ package RobArmEe {
 
         // The cable def (EE-HAR): its ends mate with J1 of the board and with the lead's plug, so
         // curatrix derives `connects` to both ports. It realizes the canary unit (a board, a part
-        // and a bit of firmware; no orphans, XD-RULE-0010).
+        // and a bit of firmware; no orphans, XD-RULE-0010). That is a canary shortcut: harnesses of
+        // the arm realize their own system element or conform to an interface, not a whole unit.
         part def <'EE-HAR-0001'> CanaryCable :> Cable {
             doc /* Two wires, 2-pin socket housings at both ends. */
             port boardEnd : ~CanaryHeader;
