@@ -87,9 +87,8 @@
 			(outputdirectory "")
 		)
 	)
-	(property "Configs" "SYS-CFG-0001")
-	(property "Realizes" "SYS-EL-0001")
 	(property "TraceID" "EE-PCBA-0001")
+	(property "XD_VERSION" "unversioned")
 	(variants
 		(variant
 			(name "default")

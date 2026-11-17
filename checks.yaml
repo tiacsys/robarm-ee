@@ -37,7 +37,7 @@ cad:                                    # CK-D4 (plain Python, also without KiCa
 requirements: true                      # CK-E2, CK-E3 on the EE requirements
 
 variants: true                          # CK-B8: board variants across levels (XD-ADR-0136), against
-                                        # model.upstream and the KiCad projects of cad.kicad. No
+                                        # model.upstream and the KiCad projects of cad.projects. No
                                         # Zephyr board roots: robarm-sw has no board of its own yet.
 
 # Domain checks (CK-F1 netlist vs. pin maps, CK-F4 ERC) are added as `commands` once the first
