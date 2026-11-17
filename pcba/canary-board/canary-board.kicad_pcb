@@ -222,6 +222,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -233,6 +234,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -407,6 +409,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -418,6 +421,7 @@
 			(effects
 				(font
 					(size 1.27 1.27)
+					(thickness 0.15)
 				)
 			)
 		)
@@ -587,16 +591,67 @@
 			)
 		)
 	)
-	(gr_rect
+	(gr_line
 		(start 88 92)
+		(end 88 112)
+		(stroke
+			(width 0.16)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "66479b32-9244-478e-8c40-74299364a2d4")
+	)
+	(gr_line
+		(start 88 112)
 		(end 118 112)
 		(stroke
-			(width 0.05)
-			(type default)
+			(width 0.16)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "3be5d034-781f-4c1d-bfb6-2ffb11b29d78")
+	)
+	(gr_circle
+		(center 92 108)
+		(end 90.4 108)
+		(stroke
+			(width 0.16)
+			(type solid)
 		)
 		(fill no)
 		(layer "Edge.Cuts")
-		(uuid "f93f4da2-0fe4-43da-9b08-432754367942")
+		(uuid "afd4e4fe-7b11-4e9a-93cd-661adacfcd74")
+	)
+	(gr_circle
+		(center 114 96)
+		(end 112.4 96)
+		(stroke
+			(width 0.16)
+			(type solid)
+		)
+		(fill no)
+		(layer "Edge.Cuts")
+		(uuid "2aca2042-6372-4cd1-a86e-7b1b43e86c1c")
+	)
+	(gr_line
+		(start 118 92)
+		(end 88 92)
+		(stroke
+			(width 0.16)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "9479ef4d-1808-46fb-b805-b5d676b05341")
+	)
+	(gr_line
+		(start 118 112)
+		(end 118 92)
+		(stroke
+			(width 0.16)
+			(type solid)
+		)
+		(layer "Edge.Cuts")
+		(uuid "47aa1651-35c8-4287-ace9-e0eca7ab4571")
 	)
 	(gr_text "${XD_VERSION}"
 		(at 103 109 0)
