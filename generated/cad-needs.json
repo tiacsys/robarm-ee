@@ -4,7 +4,39 @@
   "project": "robarm-ee-cad",
   "versions": {
     "": {
-      "needs": {}
+      "needs": {
+        "EE-CMP-0001": {
+          "configs": [
+            "SYS-CFG-0001"
+          ],
+          "content": "KiCad symbol ``R1`` (10k, footprint ``Resistor_SMD:R_0603_1608Metric``) in ``pcba/canary-board/canary-board.kicad_sch``.",
+          "id": "EE-CMP-0001",
+          "part_of": [
+            "EE-PCBA-0001"
+          ],
+          "realizes": [
+            "SYS-EL-0001"
+          ],
+          "source_file": "pcba/canary-board/canary-board.kicad_sch",
+          "status": "valid",
+          "title": "10k",
+          "type": "ee-cmp"
+        },
+        "EE-PCBA-0001": {
+          "configs": [
+            "SYS-CFG-0001"
+          ],
+          "content": "KiCad project ``pcba/canary-board/canary-board.kicad_pro``.",
+          "id": "EE-PCBA-0001",
+          "realizes": [
+            "SYS-EL-0001"
+          ],
+          "source_file": "pcba/canary-board/canary-board.kicad_pro",
+          "status": "valid",
+          "title": "canary-board",
+          "type": "ee-pcba"
+        }
+      }
     }
   }
 }
