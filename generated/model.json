@@ -570,7 +570,7 @@
      "@id": "RobArmEe::Canary::CanaryBoard"
     }
    ],
-   "body": "The canary PCBA: one resistor between the two pins of J1. ",
+   "body": "The canary PCBA. Planned for canary step C1: the connector J1, with R1 between its\ntwo pins (nets CANARY_A, CANARY_B). The schematic has R1 only; J1 is drawn in\ntask 5.18, and CK-F1 then compares it with the pin map below. ",
    "isLibraryElement": false,
    "owner": {
     "@id": "RobArmEe::Canary::CanaryBoard"
@@ -984,7 +984,7 @@
      "@id": "RobArmEe::Canary::CanaryHeader"
     }
    ],
-   "body": "A 2-pin header, 2.54 mm pitch, across R1. ",
+   "body": "Planned: a 2-pin header, 2.54 mm pitch (task 5.18). ",
    "isLibraryElement": false,
    "owner": {
     "@id": "RobArmEe::Canary::CanaryHeader"

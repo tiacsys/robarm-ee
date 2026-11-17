@@ -329,8 +329,6 @@
     ]
   ],
   "text_variables": {
-    "Configs": "SYS-CFG-0001",
-    "Realizes": "SYS-EL-0001",
     "TraceID": "EE-PCBA-0001"
   },
   "tuning_profiles": {
