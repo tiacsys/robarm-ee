@@ -42,6 +42,8 @@ List only the libraries the project uses. The KiCad 10 symbol libraries are fold
 ## Trace fields
 
 Circuit blocks and components carry their trace ID in a hidden field `TraceID` (`EE-CMP-nnnn`),
-and their links in the hidden fields `Realizes`, `Satisfies`, `Conforms`, `Status` and `Configs`.
-The PCBA itself gets its ID (`EE-PCBA-nnnn`) as a project text variable. `curatrix gen cad-needs
+and their links in the hidden fields `Realizes`, `Satisfies`, `Conforms`, `PartOf`, `Status` and
+`Configs`. The PCBA itself gets its ID (`EE-PCBA-nnnn`) as a project text variable. KiCad also
+copies the text variables into the `.kicad_pcb` as board properties; the `.kicad_pro` is the
+source that curatrix reads. `curatrix gen cad-needs
 robarm-ee` reads them into `generated/cad-needs.json`.
