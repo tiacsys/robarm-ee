@@ -453,6 +453,28 @@
 				)
 			)
 		)
+		(property "Manufacturer" "Yageo"
+			(at 100.33 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "RC0603FR-0710KL"
+			(at 100.33 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "TraceID" "EE-CMP-0001"
 			(at 100.33 100.33 0)
 			(hide yes)
@@ -571,6 +593,28 @@
 			)
 		)
 		(property "Description" "Canary connector J1, 2 pins"
+			(at 80.01 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer" "Amphenol ICC"
+			(at 80.01 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MPN" "68001-102HLF"
 			(at 80.01 100.33 0)
 			(hide yes)
 			(show_name no)
