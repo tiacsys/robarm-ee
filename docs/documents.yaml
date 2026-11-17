@@ -21,6 +21,13 @@ documents:
     builders: [html]
     needs: {source: json}
 
+  pcba-canary-board:
+    title: "Canary Board"
+    group: g-ee
+    version_project: robarm-ee
+    builders: [html]
+    needs: {source: json}
+
   harness-canary-cable:
     title: "Canary Cable"
     group: g-ee
