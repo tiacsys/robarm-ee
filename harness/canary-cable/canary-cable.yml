@@ -1,0 +1,40 @@
+# The canary harness (task 5.22; XD-ADR-0127): WireViz YAML, 1:1 with the cable def
+# RobArmEe::Canary::CanaryCable of the EE model (metadata TraceID). Each connector names the
+# EE-PORT it mates with on a line `Port: ...` of its notes; its pins and pin labels are the pin
+# numbers and net names of that port's pin map. CK-F1 checks them, and the wiring pin to pin,
+# against both ports; `curatrix cam robarm-ee canary-cable` draws the diagram and the BOM.
+metadata:
+  title: Canary cable
+  TraceID: EE-HAR-0001
+
+connectors:
+  X1:
+    type: Dupont housing 1x02, 2.54 mm
+    subtype: female
+    manufacturer: Harwin
+    mpn: M20-1060200
+    pins: [1, 2]
+    pinlabels: [CANARY_A, CANARY_B]
+    notes: "Mates with J1 of the canary board.\nPort: EE-PORT-0001"
+  X2:
+    type: Dupont housing 1x02, 2.54 mm
+    subtype: female
+    manufacturer: Harwin
+    mpn: M20-1060200
+    pins: [1, 2]
+    pinlabels: [CANARY_A, CANARY_B]
+    notes: "Mates with the plug of the test lead.\nPort: EE-PORT-0002"
+
+cables:
+  W1:
+    wirecount: 2
+    length: 0.2
+    gauge: 0.14 mm2
+    colors: [BK, RD]
+    manufacturer: Lapp
+    mpn: "0028001"
+
+connections:
+  - - X1: [1, 2]
+    - W1: [1, 2]
+    - X2: [1, 2]

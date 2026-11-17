@@ -5,6 +5,26 @@
   "versions": {
     "": {
       "needs": {
+        "EE-HAR-0001": {
+          "configs": [
+            "SYS-CFG-0001"
+          ],
+          "connects": [
+            "EE-PORT-0001",
+            "EE-PORT-0002"
+          ],
+          "content": "SysML ``PartDefinition`` ``RobArmEe::Canary::CanaryCable``.",
+          "id": "EE-HAR-0001",
+          "qualified_name": "RobArmEe::Canary::CanaryCable",
+          "realizes": [
+            "SYS-EL-0001"
+          ],
+          "source_file": "model/canary.sysml",
+          "status": "valid",
+          "sysml_kind": "PartDefinition",
+          "title": "CanaryCable",
+          "type": "ee-har"
+        },
         "EE-PCBA-0001": {
           "configs": [
             "SYS-CFG-0001"
@@ -35,6 +55,19 @@
           "status": "valid",
           "sysml_kind": "PortDefinition",
           "title": "CanaryHeader",
+          "type": "ee-port"
+        },
+        "EE-PORT-0002": {
+          "content": "SysML ``PortDefinition`` ``RobArmEe::Canary::CanaryLeadPlug``.",
+          "id": "EE-PORT-0002",
+          "instances": [
+            "RobArmEe::Canary::CanaryTestLead::plug"
+          ],
+          "qualified_name": "RobArmEe::Canary::CanaryLeadPlug",
+          "source_file": "model/canary.sysml",
+          "status": "valid",
+          "sysml_kind": "PortDefinition",
+          "title": "CanaryLeadPlug",
           "type": "ee-port"
         }
       }

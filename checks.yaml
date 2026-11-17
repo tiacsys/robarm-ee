@@ -35,6 +35,9 @@ cad:                                    # CK-D4 (plain Python, also without KiCa
   # generated/<project>.connectors.json: the connector pin tables (CK-D7), cross-checked against
   # KiCad's XML netlist (CK-D8, local) and the pin maps of the EE model (CK-F1).
   connectors: generated
+  # WireViz harnesses, harness/<name>/<name>.yml (XD-ADR-0127): CK-F7 checks the 1:1 with the cable
+  # defs of the EE model, CK-F1 their ends pin to pin against both ports; `curatrix cam` draws them.
+  harnesses: ["harness/*/*.yml"]
   needs: generated/cad-needs.json
 
 requirements: true                      # CK-E2, CK-E3 on the EE requirements
