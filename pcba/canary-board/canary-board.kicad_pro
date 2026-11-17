@@ -318,11 +318,16 @@
       {
         "filename": "canary-board.kicad_sch",
         "name": "canary-board",
-        "uuid": "00000000-0000-0000-0000-000000000000"
+        "uuid": "490883a3-078f-4b69-84bb-9c1ca1a27820"
       }
     ]
   },
-  "sheets": [],
+  "sheets": [
+    [
+      "490883a3-078f-4b69-84bb-9c1ca1a27820",
+      "canary-board"
+    ]
+  ],
   "text_variables": {
     "Configs": "SYS-CFG-0001",
     "Realizes": "SYS-EL-0001",
