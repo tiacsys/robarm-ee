@@ -93,7 +93,7 @@
 	(variants
 		(variant
 			(name "default")
-			(description "R1 fitted (canary configuration SYS-CFG-0001)")
+			(description "R1 fitted")
 		)
 		(variant
 			(name "alt")
