@@ -277,6 +277,10 @@
 				(path "/490883a3-078f-4b69-84bb-9c1ca1a27820"
 					(reference "R1")
 					(unit 1)
+					(variant
+						(name "alt")
+						(dnp yes)
+					)
 				)
 			)
 		)

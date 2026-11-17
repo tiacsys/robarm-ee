@@ -90,5 +90,15 @@
 	(property "Configs" "SYS-CFG-0001")
 	(property "Realizes" "SYS-EL-0001")
 	(property "TraceID" "EE-PCBA-0001")
+	(variants
+		(variant
+			(name "default")
+			(description "R1 fitted (canary configuration SYS-CFG-0001)")
+		)
+		(variant
+			(name "alt")
+			(description "R1 not fitted")
+		)
+	)
 	(embedded_fonts no)
 )
