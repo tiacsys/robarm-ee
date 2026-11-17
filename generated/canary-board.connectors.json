@@ -15,8 +15,10 @@
           "number": "2"
         }
       ],
-      "port": "EE-PORT-0001",
-      "ref": "J1",
+      "portName": "canaryLink",
+      "portType": "CanaryHeader",
+      "portTypeID": "EE-PORT-0001",
+      "ref": "X1",
       "sheet": "/",
       "value": "Conn_01x02"
     }
