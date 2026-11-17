@@ -12,10 +12,21 @@ Overview
 
 .. xd-pcba-overview:: canary-board
 
+Block diagram
+-------------
+
+The board def of the EE model with its connector ports (from the model; ``curatrix views build``):
+
+.. sysml-view:: /views/canaryBoard.drawio.svg
+   :caption: The canary board and its ports (view canaryBoard)
+
 Variants
 --------
 
 .. xd-pcba-variants:: canary-board
+
+.. sysml-view:: /views/canaryBoardVariants.drawio.svg
+   :caption: The variants of the canary board in the EE model and what each serves (view canaryBoardVariants)
 
 Renderings
 ----------

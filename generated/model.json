@@ -6866,6 +6866,18 @@
     },
     {
      "@id": "lib:XdTrace::XdView::layer"
+    },
+    {
+     "@id": "lib:XdTrace::XdView::direction"
+    },
+    {
+     "@id": "lib:XdTrace::XdView::show"
+    },
+    {
+     "@id": "lib:XdTrace::XdView::compartments"
+    },
+    {
+     "@id": "lib:XdTrace::XdView::between"
     }
    ],
    "isAbstract": false,
@@ -7411,6 +7423,1403 @@
  },
  {
   "identity": {
+   "@id": "RobArmEeViews"
+  },
+  "payload": {
+   "@id": "RobArmEeViews",
+   "@type": "Package",
+   "declaredName": "RobArmEeViews",
+   "isLibraryElement": false,
+   "name": "RobArmEeViews",
+   "ownedMember": [
+    {
+     "@id": "RobArmEeViews::eeAllocation"
+    },
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants"
+    }
+   ],
+   "ownedRelationship": [
+    {
+     "@id": "RobArmEeViews/0"
+    },
+    {
+     "@id": "RobArmEeViews/1"
+    },
+    {
+     "@id": "RobArmEeViews/2"
+    }
+   ],
+   "qualifiedName": "RobArmEeViews"
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews/0"
+  },
+  "payload": {
+   "@id": "RobArmEeViews/0",
+   "@type": "NamespaceImport",
+   "importedNamespace": {
+    "@id": "lib:XdTrace"
+   },
+   "isLibraryElement": false,
+   "relatedElement": [
+    {
+     "@id": "RobArmEeViews"
+    },
+    {
+     "@id": "lib:XdTrace"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmEeViews"
+    }
+   ],
+   "target": [
+    {
+     "@id": "lib:XdTrace"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews/1"
+  },
+  "payload": {
+   "@id": "RobArmEeViews/1",
+   "@type": "OwningMembership",
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmEeViews::eeAllocation"
+   },
+   "memberName": "eeAllocation",
+   "membershipOwningNamespace": {
+    "@id": "RobArmEeViews"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmEeViews::eeAllocation"
+    }
+   ],
+   "relatedElement": [
+    {
+     "@id": "RobArmEeViews"
+    },
+    {
+     "@id": "RobArmEeViews::eeAllocation"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmEeViews"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmEeViews::eeAllocation"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews/2"
+  },
+  "payload": {
+   "@id": "RobArmEeViews/2",
+   "@type": "OwningMembership",
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmEeViews::canaryBoardVariants"
+   },
+   "memberName": "canaryBoardVariants",
+   "membershipOwningNamespace": {
+    "@id": "RobArmEeViews"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants"
+    }
+   ],
+   "relatedElement": [
+    {
+     "@id": "RobArmEeViews"
+    },
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmEeViews"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::canaryBoardVariants"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::canaryBoardVariants",
+   "@type": "ViewUsage",
+   "declaredName": "canaryBoardVariants",
+   "isAbstract": false,
+   "isComposite": false,
+   "isConjugated": false,
+   "isEnd": false,
+   "isLibraryElement": false,
+   "isReference": true,
+   "isVariation": false,
+   "name": "canaryBoardVariants",
+   "ownedMember": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+    }
+   ],
+   "ownedRelationship": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0"
+    }
+   ],
+   "owner": {
+    "@id": "RobArmEeViews"
+   },
+   "owningNamespace": {
+    "@id": "RobArmEeViews"
+   },
+   "owningRelationship": {
+    "@id": "RobArmEeViews/2"
+   },
+   "qualifiedName": "RobArmEeViews::canaryBoardVariants"
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0",
+   "@type": "OwningMembership",
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+   },
+   "membershipOwningNamespace": {
+    "@id": "RobArmEeViews::canaryBoardVariants"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+    }
+   ],
+   "relatedElement": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants"
+    },
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0/0",
+   "@type": "MetadataUsage",
+   "annotatedElement": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants"
+    }
+   ],
+   "definition": [
+    {
+     "@id": "lib:XdTrace::XdView"
+    }
+   ],
+   "feature": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0"
+    },
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0"
+    },
+    {
+     "@id": "lib:XdTrace::XdView::layer"
+    },
+    {
+     "@id": "lib:XdTrace::XdView::direction"
+    },
+    {
+     "@id": "lib:XdTrace::XdView::show"
+    },
+    {
+     "@id": "lib:XdTrace::XdView::compartments"
+    },
+    {
+     "@id": "lib:XdTrace::XdView::between"
+    }
+   ],
+   "isAbstract": false,
+   "isComposite": false,
+   "isConjugated": false,
+   "isEnd": false,
+   "isLibraryElement": false,
+   "isReference": true,
+   "isVariation": false,
+   "metadataDefinition": {
+    "@id": "lib:XdTrace::XdView"
+   },
+   "ownedFeature": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0"
+    },
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0"
+    }
+   ],
+   "ownedMember": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0"
+    },
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0"
+    }
+   ],
+   "ownedRelationship": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/0"
+    },
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/1"
+    },
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/2"
+    }
+   ],
+   "owner": {
+    "@id": "RobArmEeViews::canaryBoardVariants"
+   },
+   "owningNamespace": {
+    "@id": "RobArmEeViews::canaryBoardVariants"
+   },
+   "owningRelationship": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0"
+   },
+   "type": [
+    {
+     "@id": "lib:XdTrace::XdView"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0/0/0"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0/0/0",
+   "@type": "FeatureTyping",
+   "general": {
+    "@id": "lib:XdTrace::XdView"
+   },
+   "isLibraryElement": false,
+   "owningType": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+   },
+   "relatedElement": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+    },
+    {
+     "@id": "lib:XdTrace::XdView"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+    }
+   ],
+   "specific": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+   },
+   "target": [
+    {
+     "@id": "lib:XdTrace::XdView"
+    }
+   ],
+   "type": {
+    "@id": "lib:XdTrace::XdView"
+   },
+   "typedFeature": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+   }
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0/0/1"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0/0/1",
+   "@type": "FeatureMembership",
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0"
+   },
+   "memberName": "kind",
+   "membershipOwningNamespace": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0"
+    }
+   ],
+   "owningType": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+   },
+   "relatedElement": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+    },
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0",
+   "@type": "ReferenceUsage",
+   "definition": [
+    {
+     "@id": "lib:ScalarValues::String"
+    }
+   ],
+   "isAbstract": false,
+   "isComposite": false,
+   "isConjugated": false,
+   "isEnd": false,
+   "isLibraryElement": false,
+   "isReference": true,
+   "isVariation": false,
+   "name": "kind",
+   "ownedMember": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0/1/0"
+    }
+   ],
+   "ownedRelationship": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0/0"
+    },
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0/1"
+    }
+   ],
+   "owner": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+   },
+   "owningNamespace": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+   },
+   "owningRelationship": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0/1"
+   },
+   "owningType": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+   },
+   "type": [
+    {
+     "@id": "lib:ScalarValues::String"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0/0"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0/0",
+   "@type": "Redefinition",
+   "general": {
+    "@id": "lib:XdTrace::XdView::kind"
+   },
+   "isLibraryElement": false,
+   "owningType": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0"
+   },
+   "redefinedFeature": {
+    "@id": "lib:XdTrace::XdView::kind"
+   },
+   "relatedElement": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0"
+    },
+    {
+     "@id": "lib:XdTrace::XdView::kind"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0"
+    }
+   ],
+   "specific": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0"
+   },
+   "subsettedFeature": {
+    "@id": "lib:XdTrace::XdView::kind"
+   },
+   "target": [
+    {
+     "@id": "lib:XdTrace::XdView::kind"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0/1"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0/1",
+   "@type": "FeatureValue",
+   "featureWithValue": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0"
+   },
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0/1/0"
+   },
+   "membershipOwningNamespace": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0/1/0"
+    }
+   ],
+   "relatedElement": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0"
+    },
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0/1/0"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0/1/0"
+    }
+   ],
+   "value": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0/1/0"
+   }
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0/1/0"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0/1/0",
+   "@type": "LiteralString",
+   "isAbstract": false,
+   "isComposite": false,
+   "isConjugated": false,
+   "isEnd": false,
+   "isLibraryElement": false,
+   "owner": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0"
+   },
+   "owningNamespace": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0"
+   },
+   "owningRelationship": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0/1/0/1"
+   },
+   "value": "variants"
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0/0/2"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0/0/2",
+   "@type": "FeatureMembership",
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0"
+   },
+   "memberName": "root",
+   "membershipOwningNamespace": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0"
+    }
+   ],
+   "owningType": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+   },
+   "relatedElement": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+    },
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0",
+   "@type": "ReferenceUsage",
+   "definition": [
+    {
+     "@id": "lib:ScalarValues::String"
+    }
+   ],
+   "isAbstract": false,
+   "isComposite": false,
+   "isConjugated": false,
+   "isEnd": false,
+   "isLibraryElement": false,
+   "isReference": true,
+   "isVariation": false,
+   "name": "root",
+   "ownedMember": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0/1/0"
+    }
+   ],
+   "ownedRelationship": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0/0"
+    },
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0/1"
+    }
+   ],
+   "owner": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+   },
+   "owningNamespace": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+   },
+   "owningRelationship": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0/2"
+   },
+   "owningType": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0"
+   },
+   "type": [
+    {
+     "@id": "lib:ScalarValues::String"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0/0"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0/0",
+   "@type": "Redefinition",
+   "general": {
+    "@id": "lib:XdTrace::XdView::root"
+   },
+   "isLibraryElement": false,
+   "owningType": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0"
+   },
+   "redefinedFeature": {
+    "@id": "lib:XdTrace::XdView::root"
+   },
+   "relatedElement": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0"
+    },
+    {
+     "@id": "lib:XdTrace::XdView::root"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0"
+    }
+   ],
+   "specific": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0"
+   },
+   "subsettedFeature": {
+    "@id": "lib:XdTrace::XdView::root"
+   },
+   "target": [
+    {
+     "@id": "lib:XdTrace::XdView::root"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0/1"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0/1",
+   "@type": "FeatureValue",
+   "featureWithValue": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0"
+   },
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0/1/0"
+   },
+   "membershipOwningNamespace": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0/1/0"
+    }
+   ],
+   "relatedElement": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0"
+    },
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0/1/0"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0/1/0"
+    }
+   ],
+   "value": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0/1/0"
+   }
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0/1/0"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0/1/0",
+   "@type": "LiteralString",
+   "isAbstract": false,
+   "isComposite": false,
+   "isConjugated": false,
+   "isEnd": false,
+   "isLibraryElement": false,
+   "owner": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0"
+   },
+   "owningNamespace": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0"
+   },
+   "owningRelationship": {
+    "@id": "RobArmEeViews::canaryBoardVariants/0/0/2/0/1"
+   },
+   "value": "RobArmEe::Canary::CanaryBoard"
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::eeAllocation"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::eeAllocation",
+   "@type": "ViewUsage",
+   "declaredName": "eeAllocation",
+   "isAbstract": false,
+   "isComposite": false,
+   "isConjugated": false,
+   "isEnd": false,
+   "isLibraryElement": false,
+   "isReference": true,
+   "isVariation": false,
+   "name": "eeAllocation",
+   "ownedMember": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0"
+    }
+   ],
+   "ownedRelationship": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0"
+    }
+   ],
+   "owner": {
+    "@id": "RobArmEeViews"
+   },
+   "owningNamespace": {
+    "@id": "RobArmEeViews"
+   },
+   "owningRelationship": {
+    "@id": "RobArmEeViews/1"
+   },
+   "qualifiedName": "RobArmEeViews::eeAllocation"
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::eeAllocation/0"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::eeAllocation/0",
+   "@type": "OwningMembership",
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmEeViews::eeAllocation/0/0"
+   },
+   "membershipOwningNamespace": {
+    "@id": "RobArmEeViews::eeAllocation"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0"
+    }
+   ],
+   "relatedElement": [
+    {
+     "@id": "RobArmEeViews::eeAllocation"
+    },
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmEeViews::eeAllocation"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::eeAllocation/0/0"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::eeAllocation/0/0",
+   "@type": "MetadataUsage",
+   "annotatedElement": [
+    {
+     "@id": "RobArmEeViews::eeAllocation"
+    }
+   ],
+   "definition": [
+    {
+     "@id": "lib:XdTrace::XdView"
+    }
+   ],
+   "feature": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/1/0"
+    },
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/2/0"
+    },
+    {
+     "@id": "lib:XdTrace::XdView::layer"
+    },
+    {
+     "@id": "lib:XdTrace::XdView::direction"
+    },
+    {
+     "@id": "lib:XdTrace::XdView::show"
+    },
+    {
+     "@id": "lib:XdTrace::XdView::compartments"
+    },
+    {
+     "@id": "lib:XdTrace::XdView::between"
+    }
+   ],
+   "isAbstract": false,
+   "isComposite": false,
+   "isConjugated": false,
+   "isEnd": false,
+   "isLibraryElement": false,
+   "isReference": true,
+   "isVariation": false,
+   "metadataDefinition": {
+    "@id": "lib:XdTrace::XdView"
+   },
+   "ownedFeature": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/1/0"
+    },
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/2/0"
+    }
+   ],
+   "ownedMember": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/1/0"
+    },
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/2/0"
+    }
+   ],
+   "ownedRelationship": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/0"
+    },
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/1"
+    },
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/2"
+    }
+   ],
+   "owner": {
+    "@id": "RobArmEeViews::eeAllocation"
+   },
+   "owningNamespace": {
+    "@id": "RobArmEeViews::eeAllocation"
+   },
+   "owningRelationship": {
+    "@id": "RobArmEeViews::eeAllocation/0"
+   },
+   "type": [
+    {
+     "@id": "lib:XdTrace::XdView"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::eeAllocation/0/0/0"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::eeAllocation/0/0/0",
+   "@type": "FeatureTyping",
+   "general": {
+    "@id": "lib:XdTrace::XdView"
+   },
+   "isLibraryElement": false,
+   "owningType": {
+    "@id": "RobArmEeViews::eeAllocation/0/0"
+   },
+   "relatedElement": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0"
+    },
+    {
+     "@id": "lib:XdTrace::XdView"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0"
+    }
+   ],
+   "specific": {
+    "@id": "RobArmEeViews::eeAllocation/0/0"
+   },
+   "target": [
+    {
+     "@id": "lib:XdTrace::XdView"
+    }
+   ],
+   "type": {
+    "@id": "lib:XdTrace::XdView"
+   },
+   "typedFeature": {
+    "@id": "RobArmEeViews::eeAllocation/0/0"
+   }
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::eeAllocation/0/0/1"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::eeAllocation/0/0/1",
+   "@type": "FeatureMembership",
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmEeViews::eeAllocation/0/0/1/0"
+   },
+   "memberName": "kind",
+   "membershipOwningNamespace": {
+    "@id": "RobArmEeViews::eeAllocation/0/0"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/1/0"
+    }
+   ],
+   "owningType": {
+    "@id": "RobArmEeViews::eeAllocation/0/0"
+   },
+   "relatedElement": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0"
+    },
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/1/0"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/1/0"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::eeAllocation/0/0/1/0"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::eeAllocation/0/0/1/0",
+   "@type": "ReferenceUsage",
+   "definition": [
+    {
+     "@id": "lib:ScalarValues::String"
+    }
+   ],
+   "isAbstract": false,
+   "isComposite": false,
+   "isConjugated": false,
+   "isEnd": false,
+   "isLibraryElement": false,
+   "isReference": true,
+   "isVariation": false,
+   "name": "kind",
+   "ownedMember": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/1/0/1/0"
+    }
+   ],
+   "ownedRelationship": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/1/0/0"
+    },
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/1/0/1"
+    }
+   ],
+   "owner": {
+    "@id": "RobArmEeViews::eeAllocation/0/0"
+   },
+   "owningNamespace": {
+    "@id": "RobArmEeViews::eeAllocation/0/0"
+   },
+   "owningRelationship": {
+    "@id": "RobArmEeViews::eeAllocation/0/0/1"
+   },
+   "owningType": {
+    "@id": "RobArmEeViews::eeAllocation/0/0"
+   },
+   "type": [
+    {
+     "@id": "lib:ScalarValues::String"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::eeAllocation/0/0/1/0/0"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::eeAllocation/0/0/1/0/0",
+   "@type": "Redefinition",
+   "general": {
+    "@id": "lib:XdTrace::XdView::kind"
+   },
+   "isLibraryElement": false,
+   "owningType": {
+    "@id": "RobArmEeViews::eeAllocation/0/0/1/0"
+   },
+   "redefinedFeature": {
+    "@id": "lib:XdTrace::XdView::kind"
+   },
+   "relatedElement": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/1/0"
+    },
+    {
+     "@id": "lib:XdTrace::XdView::kind"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/1/0"
+    }
+   ],
+   "specific": {
+    "@id": "RobArmEeViews::eeAllocation/0/0/1/0"
+   },
+   "subsettedFeature": {
+    "@id": "lib:XdTrace::XdView::kind"
+   },
+   "target": [
+    {
+     "@id": "lib:XdTrace::XdView::kind"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::eeAllocation/0/0/1/0/1"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::eeAllocation/0/0/1/0/1",
+   "@type": "FeatureValue",
+   "featureWithValue": {
+    "@id": "RobArmEeViews::eeAllocation/0/0/1/0"
+   },
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmEeViews::eeAllocation/0/0/1/0/1/0"
+   },
+   "membershipOwningNamespace": {
+    "@id": "RobArmEeViews::eeAllocation/0/0/1/0"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/1/0/1/0"
+    }
+   ],
+   "relatedElement": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/1/0"
+    },
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/1/0/1/0"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/1/0"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/1/0/1/0"
+    }
+   ],
+   "value": {
+    "@id": "RobArmEeViews::eeAllocation/0/0/1/0/1/0"
+   }
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::eeAllocation/0/0/1/0/1/0"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::eeAllocation/0/0/1/0/1/0",
+   "@type": "LiteralString",
+   "isAbstract": false,
+   "isComposite": false,
+   "isConjugated": false,
+   "isEnd": false,
+   "isLibraryElement": false,
+   "owner": {
+    "@id": "RobArmEeViews::eeAllocation/0/0/1/0"
+   },
+   "owningNamespace": {
+    "@id": "RobArmEeViews::eeAllocation/0/0/1/0"
+   },
+   "owningRelationship": {
+    "@id": "RobArmEeViews::eeAllocation/0/0/1/0/1"
+   },
+   "value": "allocation"
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::eeAllocation/0/0/2"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::eeAllocation/0/0/2",
+   "@type": "FeatureMembership",
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmEeViews::eeAllocation/0/0/2/0"
+   },
+   "memberName": "root",
+   "membershipOwningNamespace": {
+    "@id": "RobArmEeViews::eeAllocation/0/0"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/2/0"
+    }
+   ],
+   "owningType": {
+    "@id": "RobArmEeViews::eeAllocation/0/0"
+   },
+   "relatedElement": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0"
+    },
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/2/0"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/2/0"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::eeAllocation/0/0/2/0"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::eeAllocation/0/0/2/0",
+   "@type": "ReferenceUsage",
+   "definition": [
+    {
+     "@id": "lib:ScalarValues::String"
+    }
+   ],
+   "isAbstract": false,
+   "isComposite": false,
+   "isConjugated": false,
+   "isEnd": false,
+   "isLibraryElement": false,
+   "isReference": true,
+   "isVariation": false,
+   "name": "root",
+   "ownedMember": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/2/0/1/0"
+    }
+   ],
+   "ownedRelationship": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/2/0/0"
+    },
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/2/0/1"
+    }
+   ],
+   "owner": {
+    "@id": "RobArmEeViews::eeAllocation/0/0"
+   },
+   "owningNamespace": {
+    "@id": "RobArmEeViews::eeAllocation/0/0"
+   },
+   "owningRelationship": {
+    "@id": "RobArmEeViews::eeAllocation/0/0/2"
+   },
+   "owningType": {
+    "@id": "RobArmEeViews::eeAllocation/0/0"
+   },
+   "type": [
+    {
+     "@id": "lib:ScalarValues::String"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::eeAllocation/0/0/2/0/0"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::eeAllocation/0/0/2/0/0",
+   "@type": "Redefinition",
+   "general": {
+    "@id": "lib:XdTrace::XdView::root"
+   },
+   "isLibraryElement": false,
+   "owningType": {
+    "@id": "RobArmEeViews::eeAllocation/0/0/2/0"
+   },
+   "redefinedFeature": {
+    "@id": "lib:XdTrace::XdView::root"
+   },
+   "relatedElement": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/2/0"
+    },
+    {
+     "@id": "lib:XdTrace::XdView::root"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/2/0"
+    }
+   ],
+   "specific": {
+    "@id": "RobArmEeViews::eeAllocation/0/0/2/0"
+   },
+   "subsettedFeature": {
+    "@id": "lib:XdTrace::XdView::root"
+   },
+   "target": [
+    {
+     "@id": "lib:XdTrace::XdView::root"
+    }
+   ]
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::eeAllocation/0/0/2/0/1"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::eeAllocation/0/0/2/0/1",
+   "@type": "FeatureValue",
+   "featureWithValue": {
+    "@id": "RobArmEeViews::eeAllocation/0/0/2/0"
+   },
+   "isLibraryElement": false,
+   "memberElement": {
+    "@id": "RobArmEeViews::eeAllocation/0/0/2/0/1/0"
+   },
+   "membershipOwningNamespace": {
+    "@id": "RobArmEeViews::eeAllocation/0/0/2/0"
+   },
+   "ownedRelatedElement": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/2/0/1/0"
+    }
+   ],
+   "relatedElement": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/2/0"
+    },
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/2/0/1/0"
+    }
+   ],
+   "source": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/2/0"
+    }
+   ],
+   "target": [
+    {
+     "@id": "RobArmEeViews::eeAllocation/0/0/2/0/1/0"
+    }
+   ],
+   "value": {
+    "@id": "RobArmEeViews::eeAllocation/0/0/2/0/1/0"
+   }
+  }
+ },
+ {
+  "identity": {
+   "@id": "RobArmEeViews::eeAllocation/0/0/2/0/1/0"
+  },
+  "payload": {
+   "@id": "RobArmEeViews::eeAllocation/0/0/2/0/1/0",
+   "@type": "LiteralString",
+   "isAbstract": false,
+   "isComposite": false,
+   "isConjugated": false,
+   "isEnd": false,
+   "isLibraryElement": false,
+   "owner": {
+    "@id": "RobArmEeViews::eeAllocation/0/0/2/0"
+   },
+   "owningNamespace": {
+    "@id": "RobArmEeViews::eeAllocation/0/0/2/0"
+   },
+   "owningRelationship": {
+    "@id": "RobArmEeViews::eeAllocation/0/0/2/0/1"
+   },
+   "value": "RobArmEe::Canary"
+  }
+ },
+ {
+  "identity": {
    "@id": "lib:RobArmConfigs::canary"
   },
   "payload": {
@@ -7648,6 +9057,45 @@
  },
  {
   "identity": {
+   "@id": "lib:XdTrace::XdView::between"
+  },
+  "payload": {
+   "@id": "lib:XdTrace::XdView::between",
+   "@type": "AttributeUsage",
+   "declaredName": "between",
+   "isLibraryElement": true,
+   "name": "between",
+   "qualifiedName": "XdTrace::XdView::between"
+  }
+ },
+ {
+  "identity": {
+   "@id": "lib:XdTrace::XdView::compartments"
+  },
+  "payload": {
+   "@id": "lib:XdTrace::XdView::compartments",
+   "@type": "AttributeUsage",
+   "declaredName": "compartments",
+   "isLibraryElement": true,
+   "name": "compartments",
+   "qualifiedName": "XdTrace::XdView::compartments"
+  }
+ },
+ {
+  "identity": {
+   "@id": "lib:XdTrace::XdView::direction"
+  },
+  "payload": {
+   "@id": "lib:XdTrace::XdView::direction",
+   "@type": "AttributeUsage",
+   "declaredName": "direction",
+   "isLibraryElement": true,
+   "name": "direction",
+   "qualifiedName": "XdTrace::XdView::direction"
+  }
+ },
+ {
+  "identity": {
    "@id": "lib:XdTrace::XdView::kind"
   },
   "payload": {
@@ -7683,6 +9131,19 @@
    "isLibraryElement": true,
    "name": "root",
    "qualifiedName": "XdTrace::XdView::root"
+  }
+ },
+ {
+  "identity": {
+   "@id": "lib:XdTrace::XdView::show"
+  },
+  "payload": {
+   "@id": "lib:XdTrace::XdView::show",
+   "@type": "AttributeUsage",
+   "declaredName": "show",
+   "isLibraryElement": true,
+   "name": "show",
+   "qualifiedName": "XdTrace::XdView::show"
   }
  }
 ]
