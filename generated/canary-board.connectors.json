@@ -21,9 +21,9 @@
       "value": "Conn_01x02"
     }
   ],
-  "inputs": {
-    "pcba/canary-board/canary-board.kicad_sch": "04558101be09a04055a4a0e6f90b564a9b7feb37fead792c7139add996227422"
-  },
+  "inputs": [
+    "pcba/canary-board/canary-board.kicad_sch"
+  ],
   "project": "canary-board",
   "root_sheet": "pcba/canary-board/canary-board.kicad_sch"
 }
