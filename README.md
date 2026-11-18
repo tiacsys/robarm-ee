@@ -16,7 +16,11 @@ content comes in Phase 6.
 | `lib/` | local symbols, footprints and 3D models that the tiacsys libraries do not have |
 | `tests/` | scripted EE checks |
 | `generated/cad-needs.json` | needs read from the KiCad files (generated, committed) |
-| `docs/ee-design/` | EE Requirements and Design: EE requirements and the design of every PCBA and prototype setup |
+| `docs/ee-req/` | EE Requirements Specification |
+| `docs/ee-design/` | EE Design: board and cable defs, allocation, overview |
+| `docs/ee-test-spec/`, `docs/ee-test-report/` | EE Test Specification and Report |
+| `docs/harnesses/` | Harnesses: every cable (ends, diagram, wiring, BOM) |
+| `docs/pcbas/pcba-<board>/` | one document per board |
 | `ids.yaml` | ID ledger for `EE-*` IDs |
 | `checks.yaml` | what `curatrix check robarm-ee` runs |
 | `claude/` | rules and skills for agents working in this repo |

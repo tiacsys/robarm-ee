@@ -12,6 +12,8 @@ the folder is named after the def (`CanaryCable` -> `canary-cable`).
   checks the 1:1 with the model.
 - `curatrix cam robarm-ee <name>` runs WireViz (diagram SVG and PNG, BOM) into
   `build/robarm-ee/cam/<name>/<version>/`; the version comes from tags `<name>/vX.Y.Z`.
-- Each harness has its document `docs/harness-<name>/`.
+- Every harness is a section of the one document `docs/harnesses/` (`.. xd-harnesses::`); its
+  diagram comes from `curatrix cam robarm-ee` (every board and harness), and the document names the
+  cables whose run is missing.
 
 Prototype jumper wiring stays a KiCad schematic per prototype setup (`proto/`, XD-ADR-0067).
