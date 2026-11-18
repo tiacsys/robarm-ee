@@ -405,7 +405,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6370aed4-9ba1-4248-97a8-b12319793dfd")
+			(uuid "d56ed8ae-74c9-48e9-8f63-fe855bd38a2b")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -417,7 +417,7 @@
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
-			(uuid "6370aed4-9ba1-4248-97a8-b12319793dfd")
+			(uuid "5246381e-3398-4c6a-964f-e47837629773")
 			(effects
 				(font
 					(size 1.27 1.27)

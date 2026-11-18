@@ -20,7 +20,7 @@ package RobArmEe {
             port canaryLink : CanaryHeader;
         }
         // The board conforms to its space budget (task 5.28, XD-ADR-0134): box, holes and the
-        // position of J1 in the system model. Outline and holes in the .kicad_pcb come from the
+        // position of the canary link connector in the system model (named j1X, j1Y there). Outline and holes in the .kicad_pcb come from the
         // skeleton of the canary assembly by the StepUp push of a co-design change; EE places X1
         // at the budget's position. A budget is no connector, so it is not a port of the board.
         dependency from CanaryBoard to RobArmProduct::Canary::CanaryBoardSpace;
