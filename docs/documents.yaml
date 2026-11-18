@@ -13,9 +13,38 @@ groups:
     title: "System"
 
 documents:
-  # own documents
+  # own documents: the V-model documents in docs/<id>/, one harnesses document for every cable,
+  # per-deliverable documents in a sub-folder (docs/pcbas/; tiacsys/xdmod#69 Q8, CK-A7)
+  ee-req:
+    title: "EE Requirements Specification"
+    group: g-ee
+    version_project: robarm-ee
+    builders: [html]
+    needs: {source: json}
+
   ee-design:
-    title: "EE Requirements and Design"
+    title: "EE Design"
+    group: g-ee
+    version_project: robarm-ee
+    builders: [html]
+    needs: {source: json}
+
+  ee-test-spec:
+    title: "EE Test Specification"
+    group: g-ee
+    version_project: robarm-ee
+    builders: [html]
+    needs: {source: json}
+
+  ee-test-report:
+    title: "EE Test Report"
+    group: g-ee
+    version_project: robarm-ee
+    builders: [html]
+    needs: {source: json}
+
+  harnesses:
+    title: "Harnesses"
     group: g-ee
     version_project: robarm-ee
     builders: [html]
@@ -24,13 +53,7 @@ documents:
   pcba-canary-board:
     title: "Canary Board"
     group: g-ee
-    version_project: robarm-ee
-    builders: [html]
-    needs: {source: json}
-
-  harness-canary-cable:
-    title: "Canary Cable"
-    group: g-ee
+    doc_dir: pcbas/pcba-canary-board
     version_project: robarm-ee
     builders: [html]
     needs: {source: json}

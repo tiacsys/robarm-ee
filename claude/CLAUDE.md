@@ -7,8 +7,10 @@ rules of this repo. Run every command from the workspace root.
 
 Electrical design: one KiCad project per PCBA (`pcba/<name>/`), the wiring of each prototype
 configuration (`proto/<config>/`), cables (`harness/<name>/`, WireViz YAML, XD-ADR-0127), local library
-parts (`lib/`), scripted EE checks (`tests/`), the document `docs/ee-design/`, and one document per
-board (`docs/pcba-<name>/`) and harness (XD-ADR-0129). A board document's renderings, schematic and
+parts (`lib/`), scripted EE checks (`tests/`), the V-model documents `docs/ee-req/`,
+`docs/ee-design/`, `docs/ee-test-spec/`, `docs/ee-test-report/`, one document `docs/harnesses/` for
+every cable, and one document per board in `docs/pcbas/pcba-<name>/` (XD-ADR-0129, XD-ADR-0149;
+CK-A7 checks the layout). A board document's renderings, schematic and
 ERC/DRC findings appear only after `curatrix cam robarm-ee` on the current commit; CI shows a fixed
 sentence instead.
 
